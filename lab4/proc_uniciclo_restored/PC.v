@@ -1,5 +1,6 @@
 module PC(
-	input iCLK,
+	input iCLK, // tem clock ?
+	input iEscrevePc,
 	input [31:0] iEnt,
 	output [31:0] oSaida
 );
@@ -11,7 +12,10 @@ end
 
 always @(posedge iCLK)
 begin
-	oSaida <= iEnt;
+	if (iEscrevePc)
+	begin
+		oSaida <= iEnt;
+	end
 end
 
 endmodule 
