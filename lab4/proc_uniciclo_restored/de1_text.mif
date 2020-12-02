@@ -1,0 +1,28 @@
+DEPTH = 16384;
+WIDTH = 32;
+ADDRESS_RADIX = HEX;
+DATA_RADIX = HEX;
+CONTENT
+BEGIN
+00000000 : 0fc10517;   % 7: la a0, data_0 %
+00000001 : 00050513;   % 7:  %
+00000002 : 0fc10597;   % 8: la a1, data_1 %
+00000003 : 00858593;   % 8:  %
+00000004 : 00052283;   % 11: lw t0, 0(a0)        # t0 = 1; a0 vai ser carregado com endr de memoria.  %
+00000005 : 0045a303;   % 12: lw t1, 4(a1)            # t1 = 6; a1 vai ser carregado com endr de memoria.  %
+00000006 : 006303b3;   % 13: add t2, t1, t1        # t2 = 6 + 6   = 12 %
+00000007 : 40538e33;   % 14: sub t3, t2, t0        # t3 = 12 - 1  = 11 %
+00000008 : 0062feb3;   % 15: and    t4, t0, t1        # t4 = 1 AND 6 = 0b0000 %
+00000009 : 0062ef33;   % 16: or    t5, t0, t1        # t5 = 1 OR 6  = 0b0111 %
+0000000a : 0062afb3;   % 17: slt t6, t0, t1        # t6 = 1 < 6 ? = 1 %
+0000000b : 01c000ef;   % 18: jal ra, A_LABEL         %
+0000000c : 00628063;   % 21:     beq t0, t1, EQUALS     # t0 deve ser diferente de t1 %
+0000000d : 01c5a023;   % 22:     sw t3, 0(a1)                 # data_1[0] = 0b0111 = 11 %
+0000000e : 01d5a223;   % 23:     sw t4, 4(a1)                 # data_1[1] = 0b0111 = 0 %
+0000000f : 01e5a423;   % 24:     sw t5, 8(a1)                 # data_1[2] = 0b0111 = 7 %
+00000010 : 01f5a623;   % 25:     sw t6, 12(a1)                 # data_1[3] = 0b0111 = 1 %
+00000011 : 008000ef;   % 26:     jal ra, EXIT %
+00000012 : fe5284e3;   % 29:     beq t0, t0, EQUALS %
+00000013 : 00000533;   % 32:     add a0, zero, zero %
+00000014 : 000005b3;   % 33:     add a1, zero, zero %
+END;
