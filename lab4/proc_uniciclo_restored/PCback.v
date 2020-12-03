@@ -6,7 +6,7 @@ module PCback (
 
 always @(posedge iCLK)
 begin
-	if(iEscrvePC)
+	if(iEscrevePC)
 	begin
 		oPC <= iPC;
 	end

@@ -2,7 +2,7 @@ module RegInst(
 	input iCLK, 
 	input escreveIR,
 	input [31:0] iEntrada,
-	output oSaida
+	output [31:0] oSaida
 );
 
 always @(posedge iCLK)

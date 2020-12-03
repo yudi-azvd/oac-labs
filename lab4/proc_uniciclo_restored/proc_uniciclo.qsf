@@ -679,6 +679,11 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_SYNC_N
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_VS
 set_global_assignment -name VERILOG_FILE Controlador_multiciclo.v
 set_global_assignment -name BDF_FILE multiciclo.bdf
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name VERILOG_FILE RegInst.v
 set_global_assignment -name VERILOG_FILE RegDado.v
+set_global_assignment -name VERILOG_FILE PCback.v
+set_global_assignment -name VERILOG_FILE SaidaULA.v
+set_global_assignment -name VERILOG_FILE regA.v
+set_global_assignment -name VERILOG_FILE regB.v
+set_global_assignment -name VERILOG_FILE shiftLeft.v
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
