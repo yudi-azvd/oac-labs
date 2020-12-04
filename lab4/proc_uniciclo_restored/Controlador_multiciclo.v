@@ -33,45 +33,26 @@ assign oState = pr_state;
 reg [4:0] contador;
 
 initial 
-	begin
-		pr_state <= 6'b0;
-		contador <= 5'd0;
-	end
+begin
+	pr_state <= ST_FETCH;
+	contador <= 5'd0;
+end
 
 always @(posedge iCLK)
-	begin
-		pr_state <= nx_state;
-	end
+begin
+	pr_state <= nx_state;	
+end
 
 always @(*)
 	case (pr_state)
 	
 		ST_FETCH:		// fetch
 		begin 
-			oEscreveIR 					<= 1'b0;
-			oEscrevePC 					<= 1'b0;
-			oEscrevePCCondicional 	<= 1'b0;
-			oEscrevePCBack 			<= 1'b0;
-			oOrigAULA 					<= 3'b000;
-			oOrigBULA 					<= 3'b000;
-			oMemPraReg 					<= 3'b000;
-			oOrigPC 						<=	3'b000;
-			oIouD							<= 1'b0;
-			oEscreveReg					<= 1'b0;
-			oEscreveMem					<= 1'b0;
-			oLeMem						<= 1'b1;
-			oULAControl					<= 3'bx;
-			
-			nx_state 					<= ST_FETCH1;
-		end
-		
-		ST_FETCH1:		// fetch_1
-		begin
 			oEscreveIR 					<= 1'b1;
 			oEscrevePC 					<= 1'b1;
 			oEscrevePCCondicional 	<= 1'b0;
 			oEscrevePCBack 			<= 1'b1;
-			oOrigAULA 					<= 3'b001;
+			oOrigAULA 					<= 3'b010;
 			oOrigBULA 					<= 3'b001;
 			oMemPraReg 					<= 3'b000;
 			oOrigPC 						<=	3'b000;
@@ -79,10 +60,29 @@ always @(*)
 			oEscreveReg					<= 1'b0;
 			oEscreveMem					<= 1'b0;
 			oLeMem						<= 1'b1;
-			oULAControl					<= 3'b010; // add
+			oULAControl					<= 3'b010;
 			
 			nx_state 					<= ST_DECODE;
 		end
+		
+//		ST_FETCH1:		// fetch_1
+//		begin
+//			oEscreveIR 					<= 1'b1;
+//			oEscrevePC 					<= 1'b1;
+//			oEscrevePCCondicional 	<= 1'b0;
+//			oEscrevePCBack 			<= 1'b1;
+//			oOrigAULA 					<= 3'b001;
+//			oOrigBULA 					<= 3'b001;
+//			oMemPraReg 					<= 3'b000;
+//			oOrigPC 						<=	3'b000;
+//			oIouD							<= 1'b0;
+//			oEscreveReg					<= 1'b0;
+//			oEscreveMem					<= 1'b0;
+//			oLeMem						<= 1'b1;
+//			oULAControl					<= 3'b010; // add
+//			
+//			nx_state 					<= ST_DECODE;
+//		end
 		
 		ST_DECODE: 		// decode
 		begin		
@@ -90,8 +90,8 @@ always @(*)
 			oEscrevePC 					<= 1'b0;
 			oEscrevePCCondicional 	<= 1'b0;
 			oEscrevePCBack 			<= 1'b0;
-			oOrigAULA 					<= 3'b010;
-			oOrigBULA 					<= 3'b010;
+			oOrigAULA 					<= 3'b000;
+			oOrigBULA 					<= 3'b011;
 			oMemPraReg 					<= 3'b000;
 			oOrigPC 						<=	3'b000;
 			oIouD							<= 1'b0;
@@ -115,7 +115,7 @@ always @(*)
 			oEscrevePC 					<= 1'b0;
 			oEscrevePCCondicional 	<= 1'b0;
 			oEscrevePCBack 			<= 1'b0;
-			oOrigAULA 					<= 3'b000;
+			oOrigAULA 					<= 3'b001;
 			oOrigBULA 					<= 3'b010;
 			oMemPraReg 					<= 3'b000;
 			oOrigPC 						<=	3'b000;
@@ -138,25 +138,6 @@ always @(*)
 			oEscrevePCCondicional 	<= 1'b0;
 			oEscrevePCBack 			<= 1'b0;
 			oOrigAULA 					<= 3'b000;
-			oOrigBULA 					<= 3'b010;
-			oMemPraReg 					<= 3'b000;
-			oOrigPC 						<=	3'b000;
-			oIouD							<= 1'b1;
-			oEscreveReg					<= 1'b0;
-			oEscreveMem					<= 1'b0;
-			oLeMem						<= 1'b1;
-			oULAControl					<= 3'b010; 
-			
-			nx_state 					<= ST_LW1;
-		end
-		
-		ST_LW1:
-		begin
-			oEscreveIR 					<= 1'b0;
-			oEscrevePC 					<= 1'b0;
-			oEscrevePCCondicional 	<= 1'b0;
-			oEscrevePCBack 			<= 1'b0;
-			oOrigAULA 					<= 3'b000;
 			oOrigBULA 					<= 3'b000;
 			oMemPraReg 					<= 3'b000;
 			oOrigPC 						<=	3'b000;
@@ -164,12 +145,12 @@ always @(*)
 			oEscreveReg					<= 1'b0;
 			oEscreveMem					<= 1'b0;
 			oLeMem						<= 1'b1;
-			oULAControl					<= 3'bx; 
+			oULAControl					<= 3'b000; 
 			
-			nx_state 					<= ST_LW2;
+			nx_state 					<= ST_LW1;
 		end
 		
-		ST_LW2:
+		ST_LW1:
 		begin
 			oEscreveIR 					<= 1'b0;
 			oEscrevePC 					<= 1'b0;
@@ -185,8 +166,27 @@ always @(*)
 			oLeMem						<= 1'b0;
 			oULAControl					<= 3'bx; 
 			
-			nx_state						<= ST_FETCH;
+			nx_state 					<= ST_FETCH;
 		end
+		
+//		ST_LW2:
+//		begin
+//			oEscreveIR 					<= 1'b0;
+//			oEscrevePC 					<= 1'b0;
+//			oEscrevePCCondicional 	<= 1'b0;
+//			oEscrevePCBack 			<= 1'b0;
+//			oOrigAULA 					<= 3'b000;
+//			oOrigBULA 					<= 3'b000;
+//			oMemPraReg 					<= 3'b010;
+//			oOrigPC 						<=	3'b000;
+//			oIouD							<= 1'b0;
+//			oEscreveReg					<= 1'b1;
+//			oEscreveMem					<= 1'b0;
+//			oLeMem						<= 1'b0;
+//			oULAControl					<= 3'bx; 
+//			
+//			nx_state						<= ST_FETCH;
+//		end
 		
 		ST_SW:
 		begin
@@ -204,27 +204,27 @@ always @(*)
 			oLeMem						<= 1'b0;
 			oULAControl					<= 3'bx; 
 			
-			nx_state						<= ST_SW1;
-		end
-		
-		ST_SW1:
-		begin
-			oEscreveIR 					<= 1'b0;
-			oEscrevePC 					<= 1'b0;
-			oEscrevePCCondicional 	<= 1'b0;
-			oEscrevePCBack 			<= 1'b0;
-			oOrigAULA 					<= 3'b000;
-			oOrigBULA 					<= 3'b000;
-			oMemPraReg 					<= 3'b000;
-			oOrigPC 						<=	3'b000;
-			oIouD							<= 1'b0;
-			oEscreveReg					<= 1'b0;
-			oEscreveMem					<= 1'b0;
-			oLeMem						<= 1'b0;
-			oULAControl					<= 3'bx;
-		
 			nx_state						<= ST_FETCH;
 		end
+		
+//		ST_SW1:
+//		begin
+//			oEscreveIR 					<= 1'b0;
+//			oEscrevePC 					<= 1'b0;
+//			oEscrevePCCondicional 	<= 1'b0;
+//			oEscrevePCBack 			<= 1'b0;
+//			oOrigAULA 					<= 3'b000;
+//			oOrigBULA 					<= 3'b000;
+//			oMemPraReg 					<= 3'b000;
+//			oOrigPC 						<=	3'b000;
+//			oIouD							<= 1'b0;
+//			oEscreveReg					<= 1'b0;
+//			oEscreveMem					<= 1'b0;
+//			oLeMem						<= 1'b0;
+//			oULAControl					<= 3'bx;
+//		
+//			nx_state						<= ST_FETCH;
+//		end
 		
 		ST_RTYPE:
 		begin
@@ -232,7 +232,7 @@ always @(*)
 			oEscrevePC 					<= 1'b0;
 			oEscrevePCCondicional 	<= 1'b0;
 			oEscrevePCBack 			<= 1'b0;
-			oOrigAULA 					<= 3'b000;
+			oOrigAULA 					<= 3'b001;
 			oOrigBULA 					<= 3'b000;
 			oMemPraReg 					<= 3'b000;
 			oOrigPC 						<=	3'b000;
@@ -283,7 +283,7 @@ always @(*)
 			oEscrevePC 					<= 1'b0;
 			oEscrevePCCondicional 	<= 1'b1;
 			oEscrevePCBack 			<= 1'b0;
-			oOrigAULA 					<= 3'b000;
+			oOrigAULA 					<= 3'b001;
 			oOrigBULA 					<= 3'b000;
 			oMemPraReg 					<= 3'b000;
 			oOrigPC 						<=	3'b001;
@@ -291,7 +291,7 @@ always @(*)
 			oEscreveReg					<= 1'b0;
 			oEscreveMem					<= 1'b0;
 			oLeMem						<= 1'b0;
-			oULAControl					<= 3'bx;
+			oULAControl					<= 3'b110;
 			
 			nx_state						<= ST_FETCH;
 		end

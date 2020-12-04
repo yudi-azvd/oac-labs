@@ -23,7 +23,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect -840 96 -672 112)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "CLK" (rect 5 0 27 12)(font "Arial" ))
+	(text "CLK" (rect 5 0 26 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -37,25 +37,9 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect -296 336 -85 352)
-	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "escrevDadoMem[31..0]" (rect 90 0 205 12)(font "Arial" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 0 8)(pt 52 8))
-		(line (pt 52 4)(pt 78 4))
-		(line (pt 52 12)(pt 78 12))
-		(line (pt 52 12)(pt 52 4))
-		(line (pt 78 4)(pt 82 8))
-		(line (pt 82 8)(pt 78 12))
-		(line (pt 78 12)(pt 82 8))
-	)
-)
-(pin
-	(output)
 	(rect 1024 256 1232 272)
 	(text "OUTPUT" (rect 169 0 207 10)(font "Arial" (font_size 6)))
-	(text "EscreveRegDado[31..0]" (rect 5 0 115 17)(font "Intel Clear" ))
+	(text "EscreveRegDado[31..0]" (rect 5 0 114 17)(font "Intel Clear" ))
 	(pt 208 8)
 	(drawing
 		(line (pt 208 8)(pt 156 8))
@@ -136,7 +120,7 @@ refer to the applicable agreement for further details.
 	(output)
 	(rect -832 304 -648 320)
 	(text "OUTPUT" (rect 145 0 183 10)(font "Arial" (font_size 6)))
-	(text "PC_SAIDA[31..0]" (rect 5 0 92 12)(font "Arial" ))
+	(text "PC_SAIDA[31..0]" (rect 5 0 91 12)(font "Arial" ))
 	(pt 184 8)
 	(drawing
 		(line (pt 184 8)(pt 132 8))
@@ -153,7 +137,7 @@ refer to the applicable agreement for further details.
 	(output)
 	(rect 16 248 256 264)
 	(text "OUTPUT" (rect 201 0 239 10)(font "Arial" (font_size 6)))
-	(text "SAIDAMEMDADOINST[31..0]" (rect 5 0 151 12)(font "Arial" ))
+	(text "SAIDAMEMDADOINST[31..0]" (rect 5 0 150 12)(font "Arial" ))
 	(pt 240 8)
 	(drawing
 		(line (pt 240 8)(pt 188 8))
@@ -181,6 +165,23 @@ refer to the applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
+)
+(pin
+	(output)
+	(rect 592 208 768 224)
+	(text "OUTPUT" (rect 140 0 178 10)(font "Arial" (font_size 6)))
+	(text "REGINST[31..0]" (rect 5 0 86 12)(font "Arial" ))
+	(pt 176 8)
+	(drawing
+		(line (pt 179 8)(pt 127 8))
+		(line (pt 127 4)(pt 101 4))
+		(line (pt 127 12)(pt 101 12))
+		(line (pt 127 12)(pt 127 4))
+		(line (pt 101 4)(pt 97 8))
+		(line (pt 97 8)(pt 101 12))
+		(line (pt 101 12)(pt 97 8))
+	)
+	(flipy)
 )
 (symbol
 	(rect -608 128 -408 240)
@@ -455,7 +456,7 @@ refer to the applicable agreement for further details.
 		(pt 208 32)
 		(output)
 		(text "oSaida[31..0]" (rect 0 0 64 12)(font "Arial" ))
-		(text "oSaida[31..0]" (rect 133 27 187 39)(font "Arial" ))
+		(text "oSaida[31..0]" (rect 133 27 197 39)(font "Arial" ))
 		(line (pt 208 32)(pt 192 32)(line_width 3))
 	)
 	(drawing
@@ -508,7 +509,7 @@ refer to the applicable agreement for further details.
 		(pt 208 32)
 		(output)
 		(text "oSaida[31..0]" (rect 0 0 64 12)(font "Arial" ))
-		(text "oSaida[31..0]" (rect 133 27 187 39)(font "Arial" ))
+		(text "oSaida[31..0]" (rect 133 27 197 39)(font "Arial" ))
 		(line (pt 208 32)(pt 192 32)(line_width 3))
 	)
 	(drawing
@@ -516,7 +517,7 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 1352 336 1384 368)
+	(rect 1344 360 1376 392)
 	(text "GND" (rect 8 16 29 26)(font "Arial" (font_size 6)))
 	(text "inst17" (rect 3 21 31 38)(font "Intel Clear" )(invisible))
 	(port
@@ -533,7 +534,7 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 1512 328 1544 360)
+	(rect 1512 368 1544 400)
 	(text "GND" (rect 8 16 29 26)(font "Arial" (font_size 6)))
 	(text "inst20" (rect 3 21 31 38)(font "Intel Clear" )(invisible))
 	(port
@@ -789,7 +790,7 @@ refer to the applicable agreement for further details.
 		(pt 192 32)
 		(output)
 		(text "oSaida[31..0]" (rect 0 0 64 12)(font "Arial" ))
-		(text "oSaida[31..0]" (rect 117 27 171 39)(font "Arial" ))
+		(text "oSaida[31..0]" (rect 117 27 181 39)(font "Arial" ))
 		(line (pt 192 32)(pt 176 32)(line_width 3))
 	)
 	(drawing
@@ -839,7 +840,7 @@ refer to the applicable agreement for further details.
 		(pt 192 32)
 		(output)
 		(text "oSaida[31..0]" (rect 0 0 64 12)(font "Arial" ))
-		(text "oSaida[31..0]" (rect 117 27 171 39)(font "Arial" ))
+		(text "oSaida[31..0]" (rect 117 27 181 39)(font "Arial" ))
 		(line (pt 192 32)(pt 176 32)(line_width 3))
 	)
 	(drawing
@@ -889,7 +890,7 @@ refer to the applicable agreement for further details.
 		(pt 192 32)
 		(output)
 		(text "oSaida[31..0]" (rect 0 0 64 12)(font "Arial" ))
-		(text "oSaida[31..0]" (rect 117 27 171 39)(font "Arial" ))
+		(text "oSaida[31..0]" (rect 117 27 181 39)(font "Arial" ))
 		(line (pt 192 32)(pt 176 32)(line_width 3))
 	)
 	(drawing
@@ -939,7 +940,7 @@ refer to the applicable agreement for further details.
 		(pt 192 32)
 		(output)
 		(text "oSaida[31..0]" (rect 0 0 64 12)(font "Arial" ))
-		(text "oSaida[31..0]" (rect 117 27 171 39)(font "Arial" ))
+		(text "oSaida[31..0]" (rect 117 27 181 39)(font "Arial" ))
 		(line (pt 192 32)(pt 176 32)(line_width 3))
 	)
 	(drawing
@@ -981,7 +982,7 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 1600 168 1632 200)
+	(rect 1592 176 1624 208)
 	(text "GND" (rect 8 16 29 26)(font "Arial" (font_size 6)))
 	(text "inst21sadvasdf" (rect 3 21 73 38)(font "Intel Clear" )(invisible))
 	(port
@@ -1037,7 +1038,7 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 1384 256 1416 272)
+	(rect 1392 344 1424 360)
 	(text "VCC" (rect 7 0 27 10)(font "Arial" (font_size 6)))
 	(text "inst19sadfasdf13413" (rect 3 5 100 22)(font "Intel Clear" )(invisible))
 	(port
@@ -1119,7 +1120,7 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 744 -312 984 -40)
+	(rect 704 -312 944 -40)
 	(text "Controlador_multiciclo" (rect 5 0 113 12)(font "Arial" ))
 	(text "instalksdhfalsf" (rect 8 256 81 268)(font "Arial" ))
 	(port
@@ -1279,24 +1280,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "Entra4[31..3]" (rect 1352 269 1369 329)(font "Intel Clear" )(vertical))
-	(pt 1368 288)
-	(pt 1368 336)
-	(bus)
-)
-(connector
-	(text "Entra4[1..0]" (rect 1512 266 1529 320)(font "Intel Clear" )(vertical))
-	(pt 1528 288)
-	(pt 1528 328)
-	(bus)
-)
-(connector
-	(text "Entra4[31..0]" (rect 1555 272 1615 289)(font "Intel Clear" ))
-	(pt 1528 288)
-	(pt 1608 288)
-	(bus)
-)
-(connector
 	(pt 1344 432)
 	(pt 1600 432)
 	(bus)
@@ -1332,11 +1315,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1552 136)
-	(pt 1624 136)
-	(bus)
-)
-(connector
 	(pt 1528 -40)
 	(pt 1600 -40)
 	(bus)
@@ -1349,26 +1327,6 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 1624 120)
 	(pt 1600 120)
-	(bus)
-)
-(connector
-	(pt 1624 152)
-	(pt 1568 152)
-	(bus)
-)
-(connector
-	(pt 1568 152)
-	(pt 1568 48)
-	(bus)
-)
-(connector
-	(pt 1568 48)
-	(pt 1288 48)
-	(bus)
-)
-(connector
-	(pt 1288 48)
-	(pt 1288 -8)
 	(bus)
 )
 (connector
@@ -1642,11 +1600,6 @@ refer to the applicable agreement for further details.
 	(pt -328 48)
 )
 (connector
-	(pt -304 344)
-	(pt -296 344)
-	(bus)
-)
-(connector
 	(pt 488 296)
 	(pt -264 296)
 	(bus)
@@ -1659,16 +1612,6 @@ refer to the applicable agreement for further details.
 (connector
 	(pt -264 160)
 	(pt -264 296)
-	(bus)
-)
-(connector
-	(pt -264 -8)
-	(pt 1288 -8)
-	(bus)
-)
-(connector
-	(pt 1288 -8)
-	(pt 1336 -8)
 	(bus)
 )
 (connector
@@ -1689,16 +1632,6 @@ refer to the applicable agreement for further details.
 (connector
 	(pt -368 144)
 	(pt -328 144)
-	(bus)
-)
-(connector
-	(pt -304 176)
-	(pt -304 344)
-	(bus)
-)
-(connector
-	(pt -304 344)
-	(pt -304 600)
 	(bus)
 )
 (connector
@@ -1829,11 +1762,6 @@ refer to the applicable agreement for further details.
 	(pt 904 152)
 )
 (connector
-	(pt 1624 168)
-	(pt 1616 168)
-	(bus)
-)
-(connector
 	(pt 1592 256)
 	(pt 1608 256)
 	(bus)
@@ -1849,119 +1777,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1128 -264)
-	(pt 984 -264)
-)
-(connector
-	(pt 1128 -296)
-	(pt 1128 -264)
-)
-(connector
-	(pt 1208 -280)
-	(pt 984 -280)
-)
-(connector
-	(pt 1208 -304)
-	(pt 1208 -280)
-)
-(connector
-	(pt 1296 -184)
-	(pt 984 -184)
-)
-(connector
-	(pt 1296 -24)
-	(pt 1296 -184)
-)
-(connector
-	(pt 1008 -248)
-	(pt 984 -248)
-)
-(connector
-	(pt 1008 -352)
-	(pt 1008 -248)
-)
-(connector
-	(pt 1024 -200)
-	(pt 984 -200)
-)
-(connector
-	(pt 1024 -432)
-	(pt 1024 -200)
-)
-(connector
-	(pt -648 -280)
-	(pt 744 -280)
-)
-(connector
-	(pt 1248 -216)
-	(pt 984 -216)
-)
-(connector
-	(pt 1248 -608)
-	(pt 1248 -216)
-)
-(connector
-	(pt 1232 -232)
-	(pt 984 -232)
-)
-(connector
-	(pt 1232 -552)
-	(pt 1232 -232)
-)
-(connector
-	(pt 1056 -168)
-	(pt 984 -168)
-)
-(connector
-	(pt 1056 64)
-	(pt 1056 -168)
-)
-(connector
-	(pt 1624 104)
-	(pt 1624 -104)
-	(bus)
-)
-(connector
-	(pt 1592 256)
-	(pt 1592 -88)
-	(bus)
-)
-(connector
-	(pt 992 -64)
-	(pt 992 -72)
-	(bus)
-)
-(connector
-	(pt 1000 -64)
-	(pt 992 -64)
-	(bus)
-)
-(connector
-	(pt 992 -72)
-	(pt 984 -72)
-	(bus)
-)
-(connector
-	(pt 2472 32)
-	(pt 2472 -136)
-	(bus)
-)
-(connector
-	(pt 1032 40)
-	(pt 1032 -152)
-	(bus)
-)
-(connector
-	(pt 768 184)
-	(pt 768 200)
-	(bus)
-)
-(connector
-	(pt 768 200)
-	(pt 768 424)
-	(bus)
-)
-(connector
 	(pt 1080 304)
 	(pt 1080 424)
 	(bus)
@@ -1970,14 +1785,6 @@ refer to the applicable agreement for further details.
 	(pt 1080 424)
 	(pt 1080 432)
 	(bus)
-)
-(connector
-	(pt -648 -280)
-	(pt -648 104)
-)
-(connector
-	(pt -648 104)
-	(pt -648 160)
 )
 (connector
 	(text "INSTRR[19..15]" (rect 862 152 932 169)(font "Intel Clear" ))
@@ -1998,37 +1805,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "ULACTRL[2..0]" (rect 1845 -136 1914 -119)(font "Intel Clear" ))
-	(pt 1888 -120)
-	(pt 984 -120)
-	(bus)
-)
-(connector
-	(pt 1888 -80)
-	(pt 2000 -80)
-)
-(connector
-	(pt 1888 -120)
-	(pt 1888 -80)
-	(bus)
-)
-(connector
-	(pt 1888 -80)
-	(pt 1888 200)
-	(bus)
-)
-(connector
-	(text "ULACTRL[3]" (rect 1984 -66 2001 -7)(font "Intel Clear" )(vertical))
-	(pt 2000 0)
-	(pt 2000 -80)
-)
-(connector
-	(text "ULACTRL[3..0]" (rect 1903 184 1972 201)(font "Intel Clear" ))
-	(pt 1888 200)
-	(pt 1920 200)
-	(bus)
-)
-(connector
 	(pt 1832 104)
 	(pt 1816 104)
 	(bus)
@@ -2044,35 +1820,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1032 40)
-	(pt 776 40)
-	(bus)
-)
-(connector
-	(text "<<__$DEF_ALIAS25917>>" (rect 1006 -168 1129 -151)(font "Intel Clear" )(invisible))
-	(pt 1032 -152)
-	(pt 984 -152)
-	(bus)
-)
-(connector
-	(text "<<__$DEF_ALIAS25919>>" (rect 2287 -152 2410 -135)(font "Intel Clear" )(invisible))
-	(pt 2472 -136)
-	(pt 984 -136)
-	(bus)
-)
-(connector
-	(text "<<__$DEF_ALIAS25921>>" (rect 1548 -120 1671 -103)(font "Intel Clear" )(invisible))
-	(pt 1624 -104)
-	(pt 984 -104)
-	(bus)
-)
-(connector
-	(text "<<__$DEF_ALIAS25923>>" (rect 1429 -104 1552 -87)(font "Intel Clear" )(invisible))
-	(pt 1592 -88)
-	(pt 984 -88)
-	(bus)
-)
-(connector
 	(pt -296 -8)
 	(pt -296 144)
 )
@@ -2085,25 +1832,6 @@ refer to the applicable agreement for further details.
 	(text "IOUD[2]" (rect -415 -24 -378 -7)(font "Intel Clear" ))
 	(pt -504 -8)
 	(pt -296 -8)
-)
-(connector
-	(pt 1496 288)
-	(pt 1496 272)
-)
-(connector
-	(pt 1368 288)
-	(pt 1496 288)
-	(bus)
-)
-(connector
-	(pt 1496 288)
-	(pt 1528 288)
-	(bus)
-)
-(connector
-	(text "Entra4[2]" (rect 1460 256 1503 273)(font "Intel Clear" ))
-	(pt 1400 272)
-	(pt 1496 272)
 )
 (connector
 	(pt -224 192)
@@ -2156,12 +1884,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "<<__$DEF_ALIAS25914>>" (rect 759 115 776 238)(font "Intel Clear" )(vertical)(invisible))
-	(pt 776 40)
-	(pt 776 240)
-	(bus)
-)
-(connector
 	(pt 1024 216)
 	(pt 976 216)
 	(bus)
@@ -2193,27 +1915,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 728 112)
-	(pt 728 -264)
-	(bus)
-)
-(connector
-	(pt 728 -264)
-	(pt 744 -264)
-	(bus)
-)
-(connector
-	(text "INSTRR[31..0]" (rect 727 96 791 113)(font "Intel Clear" ))
-	(pt 728 112)
-	(pt 768 112)
-	(bus)
-)
-(connector
-	(pt 696 112)
-	(pt 728 112)
-	(bus)
-)
-(connector
 	(pt 1272 168)
 	(pt 1272 264)
 	(bus)
@@ -2226,6 +1927,320 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 2128 200)
 	(pt 2160 200)
+	(bus)
+)
+(connector
+	(pt -304 176)
+	(pt -304 600)
+	(bus)
+)
+(connector
+	(pt 768 184)
+	(pt 768 200)
+	(bus)
+)
+(connector
+	(pt 768 200)
+	(pt 768 216)
+	(bus)
+)
+(connector
+	(pt 768 216)
+	(pt 768 424)
+	(bus)
+)
+(connector
+	(pt 1624 136)
+	(pt 1552 136)
+	(bus)
+)
+(connector
+	(pt 1032 32)
+	(pt 776 32)
+	(bus)
+)
+(connector
+	(text "<<__$DEF_ALIAS25914>>" (rect 759 115 776 238)(font "Intel Clear" )(vertical)(invisible))
+	(pt 776 240)
+	(pt 776 32)
+	(bus)
+)
+(connector
+	(pt 1496 288)
+	(pt 1496 360)
+)
+(connector
+	(text "Entra4[2]" (rect 1476 344 1519 361)(font "Intel Clear" ))
+	(pt 1496 360)
+	(pt 1408 360)
+)
+(connector
+	(text "Entra4[31..0]" (rect 1555 272 1615 289)(font "Intel Clear" ))
+	(pt 1528 288)
+	(pt 1608 288)
+	(bus)
+)
+(connector
+	(text "Entra4[1..0]" (rect 1512 306 1529 360)(font "Intel Clear" )(vertical))
+	(pt 1528 288)
+	(pt 1528 368)
+	(bus)
+)
+(connector
+	(text "Entra4[31..3]" (rect 1344 293 1361 353)(font "Intel Clear" )(vertical))
+	(pt 1360 288)
+	(pt 1360 360)
+	(bus)
+)
+(connector
+	(pt 1360 288)
+	(pt 1496 288)
+	(bus)
+)
+(connector
+	(pt 1496 288)
+	(pt 1528 288)
+	(bus)
+)
+(connector
+	(pt 1616 168)
+	(pt 1616 176)
+	(bus)
+)
+(connector
+	(pt 1624 168)
+	(pt 1616 168)
+	(bus)
+)
+(connector
+	(pt 1616 176)
+	(pt 1608 176)
+	(bus)
+)
+(connector
+	(pt 1568 48)
+	(pt 1288 48)
+	(bus)
+)
+(connector
+	(pt 1288 -8)
+	(pt 1288 48)
+	(bus)
+)
+(connector
+	(pt 1568 152)
+	(pt 1568 48)
+	(bus)
+)
+(connector
+	(pt -264 -8)
+	(pt 1288 -8)
+	(bus)
+)
+(connector
+	(pt 1288 -8)
+	(pt 1336 -8)
+	(bus)
+)
+(connector
+	(text "<<__$DEF_ALIAS1899>>" (rect 1576 136 1694 153)(font "Intel Clear" )(invisible))
+	(pt 1624 152)
+	(pt 1568 152)
+	(bus)
+)
+(connector
+	(pt 2000 0)
+	(pt 2000 -8)
+)
+(connector
+	(pt 1128 -296)
+	(pt 1128 -264)
+)
+(connector
+	(pt 1208 -304)
+	(pt 1208 -280)
+)
+(connector
+	(pt 1296 -24)
+	(pt 1296 -184)
+)
+(connector
+	(pt 1008 -352)
+	(pt 1008 -248)
+)
+(connector
+	(pt 1024 -432)
+	(pt 1024 -200)
+)
+(connector
+	(pt 1248 -608)
+	(pt 1248 -216)
+)
+(connector
+	(pt 1232 -552)
+	(pt 1232 -232)
+)
+(connector
+	(pt 1056 64)
+	(pt 1056 -168)
+)
+(connector
+	(pt 2472 32)
+	(pt 2472 -136)
+	(bus)
+)
+(connector
+	(pt 1848 -80)
+	(pt 1960 -80)
+)
+(connector
+	(pt 2000 -8)
+	(pt 1960 -8)
+)
+(connector
+	(text "ULACTRL[3]" (rect 1944 -66 1961 -7)(font "Intel Clear" )(vertical))
+	(pt 1960 -8)
+	(pt 1960 -80)
+)
+(connector
+	(pt 728 112)
+	(pt 728 -264)
+	(bus)
+)
+(connector
+	(pt 728 -264)
+	(pt 704 -264)
+	(bus)
+)
+(connector
+	(pt -648 -280)
+	(pt 704 -280)
+)
+(connector
+	(pt 1592 256)
+	(pt 1592 -88)
+	(bus)
+)
+(connector
+	(pt 1032 32)
+	(pt 1032 -152)
+	(bus)
+)
+(connector
+	(pt 1624 104)
+	(pt 1624 -104)
+	(bus)
+)
+(connector
+	(pt 1208 -280)
+	(pt 944 -280)
+)
+(connector
+	(pt 1128 -264)
+	(pt 944 -264)
+)
+(connector
+	(pt 1008 -248)
+	(pt 944 -248)
+)
+(connector
+	(pt 1232 -232)
+	(pt 944 -232)
+)
+(connector
+	(pt 1248 -216)
+	(pt 944 -216)
+)
+(connector
+	(pt 1024 -200)
+	(pt 944 -200)
+)
+(connector
+	(pt 1296 -184)
+	(pt 944 -184)
+)
+(connector
+	(pt 1056 -168)
+	(pt 944 -168)
+)
+(connector
+	(text "<<__$DEF_ALIAS25917>>" (rect 966 -168 1089 -151)(font "Intel Clear" )(invisible))
+	(pt 1032 -152)
+	(pt 944 -152)
+	(bus)
+)
+(connector
+	(text "<<__$DEF_ALIAS25919>>" (rect 1565 -152 1688 -135)(font "Intel Clear" )(invisible))
+	(pt 2472 -136)
+	(pt 944 -136)
+	(bus)
+)
+(connector
+	(text "<<__$DEF_ALIAS25921>>" (rect 1083 -120 1206 -103)(font "Intel Clear" )(invisible))
+	(pt 1624 -104)
+	(pt 944 -104)
+	(bus)
+)
+(connector
+	(text "<<__$DEF_ALIAS25923>>" (rect 1052 -104 1175 -87)(font "Intel Clear" )(invisible))
+	(pt 1592 -88)
+	(pt 944 -88)
+	(bus)
+)
+(connector
+	(pt 992 -64)
+	(pt 992 -72)
+	(bus)
+)
+(connector
+	(pt 1000 -64)
+	(pt 992 -64)
+	(bus)
+)
+(connector
+	(pt 992 -72)
+	(pt 944 -72)
+	(bus)
+)
+(connector
+	(text "ULACTRL[3..0]" (rect 1863 184 1932 201)(font "Intel Clear" ))
+	(pt 1848 200)
+	(pt 1920 200)
+	(bus)
+)
+(connector
+	(pt 696 112)
+	(pt 728 112)
+	(bus)
+)
+(connector
+	(text "INSTRR[31..0]" (rect 727 96 791 113)(font "Intel Clear" ))
+	(pt 728 112)
+	(pt 768 112)
+	(bus)
+)
+(connector
+	(pt 1848 -120)
+	(pt 1848 -80)
+	(bus)
+)
+(connector
+	(pt 1848 -80)
+	(pt 1848 200)
+	(bus)
+)
+(connector
+	(pt -648 -280)
+	(pt -648 104)
+)
+(connector
+	(pt -648 104)
+	(pt -648 160)
+)
+(connector
+	(text "ULACTRL[2..0]" (rect 1734 -136 1803 -119)(font "Intel Clear" ))
+	(pt 944 -120)
+	(pt 1848 -120)
 	(bus)
 )
 (junction (pt 768 200))
@@ -2247,12 +2262,12 @@ refer to the applicable agreement for further details.
 (junction (pt -648 104))
 (junction (pt -400 160))
 (junction (pt -328 144))
-(junction (pt -304 344))
 (junction (pt -264 160))
 (junction (pt 1576 272))
 (junction (pt 16 104))
 (junction (pt 448 144))
 (junction (pt 1080 424))
-(junction (pt 1888 -80))
 (junction (pt -296 144))
+(junction (pt 768 216))
+(junction (pt 1848 -80))
 (text " " (rect 1416 360 1419 379)(font "Intel Clear" (font_size 8)))
