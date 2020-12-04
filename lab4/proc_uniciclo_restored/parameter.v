@@ -46,18 +46,19 @@ parameter
 // estados do multiciclo
 
 	ST_FETCH 		= 6'd00,
-//	ST_FETCH1		= 6'd01,
-	ST_DECODE		= 6'd01,
-	ST_LWSW			= 6'd02,
-	ST_SW				= 6'd05,
+	ST_FETCH1		= 6'd01,
+	ST_DECODE		= 6'd02,
+	ST_LWSW			= 6'd03,
+	ST_SW				= 6'd04,
 //	ST_SW1			= 6'd05,
-	ST_LW				= 6'd03,
-	ST_LW1			= 6'd04,
+	ST_LW				= 6'd05,
+	ST_LW1			= 6'd06,
 //	ST_LW2			= 6'd08,
-	ST_RTYPE			= 6'd06,
-	ST_ULAREGWRITE	= 6'd07,
-	ST_BRANCH		= 6'd08,
-	ST_JAL			= 6'd09,
+	ST_RTYPE			= 6'd07,
+	ST_ULAREGWRITE	= 6'd08,
+	ST_BRANCH		= 6'd09,
+	ST_JAL			= 6'd10,
+	ST_ERROR			= 6'b111111,
 
 FOCAFOFA = 32'hF0CAF0FA;
 

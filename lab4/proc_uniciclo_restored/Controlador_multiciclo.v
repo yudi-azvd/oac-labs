@@ -48,6 +48,25 @@ always @(*)
 	
 		ST_FETCH:		// fetch
 		begin 
+			oEscreveIR 					<= 1'b0;
+			oEscrevePC 					<= 1'b0;
+			oEscrevePCCondicional 	<= 1'b0;
+			oEscrevePCBack 			<= 1'b0;
+			oOrigAULA 					<= 3'b000;
+			oOrigBULA 					<= 3'b000;
+			oMemPraReg 					<= 3'b000;
+			oOrigPC 						<=	3'b000;
+			oIouD							<= 1'b0;
+			oEscreveReg					<= 1'b0;
+			oEscreveMem					<= 1'b0;
+			oLeMem						<= 1'b1;
+			oULAControl					<= 3'bx; 
+			
+			nx_state 					<= ST_FETCH1; 
+		end
+		
+		ST_FETCH1:		// fetch_1
+		begin
 			oEscreveIR 					<= 1'b1;
 			oEscrevePC 					<= 1'b1;
 			oEscrevePCCondicional 	<= 1'b0;
@@ -60,29 +79,10 @@ always @(*)
 			oEscreveReg					<= 1'b0;
 			oEscreveMem					<= 1'b0;
 			oLeMem						<= 1'b1;
-			oULAControl					<= 3'b010; 
+			oULAControl					<= 3'b010; // add
 			
-			nx_state 					<= ST_DECODE; 
+			nx_state 					<= ST_DECODE;
 		end
-		
-//		ST_FETCH1:		// fetch_1
-//		begin
-//			oEscreveIR 					<= 1'b1;
-//			oEscrevePC 					<= 1'b1;
-//			oEscrevePCCondicional 	<= 1'b0;
-//			oEscrevePCBack 			<= 1'b1;
-//			oOrigAULA 					<= 3'b001;
-//			oOrigBULA 					<= 3'b001;
-//			oMemPraReg 					<= 3'b000;
-//			oOrigPC 						<=	3'b000;
-//			oIouD							<= 1'b0;
-//			oEscreveReg					<= 1'b0;
-//			oEscreveMem					<= 1'b0;
-//			oLeMem						<= 1'b1;
-//			oULAControl					<= 3'b010; // add
-//			
-//			nx_state 					<= ST_DECODE;
-//		end
 		
 		ST_DECODE: 		// decode
 		begin		
@@ -101,11 +101,12 @@ always @(*)
 			oULAControl					<= 3'b010; 
 			
 			case(Opcode)
-				OPC_LOAD,
-				OPC_STORE: nx_state		<= ST_LWSW;
-				OPC_RTYPE: nx_state		<= ST_RTYPE;
+				OPC_LOAD:	nx_state 	<= ST_LWSW;
+				OPC_STORE: 	nx_state		<= ST_LWSW;
+				OPC_RTYPE: 	nx_state		<= ST_RTYPE;
 				OPC_BRANCH: nx_state		<= ST_BRANCH;
 				OPC_JAL:		nx_state		<= ST_JAL;
+				default: 	nx_state		<= ST_ERROR;
 			endcase
 		end
 		
@@ -128,6 +129,7 @@ always @(*)
 			case(Opcode)
 				OPC_LOAD: nx_state	<= ST_LW;
 				OPC_STORE:nx_state	<= ST_SW;
+				default: nx_state		<= ST_ERROR;
 			endcase
 		end
 		
@@ -138,7 +140,7 @@ always @(*)
 			oEscrevePCCondicional 	<= 1'b0;
 			oEscrevePCBack 			<= 1'b0;
 			oOrigAULA 					<= 3'b000;
-			oOrigBULA 					<= 3'b000;
+			oOrigBULA 					<= 3'b000;	// teste
 			oMemPraReg 					<= 3'b000;
 			oOrigPC 						<=	3'b000;
 			oIouD							<= 1'b1;
@@ -315,6 +317,25 @@ always @(*)
 			nx_state						<= ST_FETCH;
 		end
 		
+		ST_ERROR:
+		begin
+			oEscreveIR 					<= 1'b0;
+			oEscrevePC 					<= 1'b0;
+			oEscrevePCCondicional 	<= 1'b0;
+			oEscrevePCBack 			<= 1'b0;
+			oOrigAULA 					<= 3'b000;
+			oOrigBULA 					<= 3'b000;
+			oMemPraReg 					<= 3'b000;
+			oOrigPC 						<=	3'b000;
+			oIouD							<= 1'b0;
+			oEscreveReg					<= 1'b0;
+			oEscreveMem					<= 1'b0;
+			oLeMem						<= 1'b0;
+			oULAControl					<= 3'b0;
+			
+			nx_state 					<= 6'b0;
+		end
+		
 		default:
 		begin
 			oEscreveIR 					<= 1'b0;
@@ -336,5 +357,4 @@ always @(*)
 		
 	endcase
 
-	
 endmodule 

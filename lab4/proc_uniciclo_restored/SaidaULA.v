@@ -1,8 +1,21 @@
+`ifndef PARAM
+	`include "../parameter.v"
+`endif
+
 module SaidaULA (
+	input iCLK,
 	input [31:0] iEntrada,
 	output [31:0] oSaida
 );
 
-assign oSaida = iEntrada;
+initial
+begin
+	oSaida = ZERO;
+end
+
+always @(posedge iCLK)
+begin
+	oSaida <= iEntrada;
+end
 
 endmodule 

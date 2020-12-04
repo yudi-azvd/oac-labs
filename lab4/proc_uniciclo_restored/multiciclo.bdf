@@ -21,42 +21,42 @@ refer to the applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect -840 96 -672 112)
-	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "CLK" (rect 5 0 26 12)(font "Arial" ))
-	(pt 168 8)
+	(rect -840 96 -664 112)
+	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
+	(text "CLK" (rect 9 0 30 12)(font "Arial" ))
+	(pt 176 8)
 	(drawing
-		(line (pt 84 12)(pt 109 12))
-		(line (pt 84 4)(pt 109 4))
-		(line (pt 113 8)(pt 168 8))
-		(line (pt 84 12)(pt 84 4))
-		(line (pt 109 4)(pt 113 8))
-		(line (pt 109 12)(pt 113 8))
+		(line (pt 92 12)(pt 117 12))
+		(line (pt 92 4)(pt 117 4))
+		(line (pt 121 8)(pt 176 8))
+		(line (pt 92 12)(pt 92 4))
+		(line (pt 117 4)(pt 121 8))
+		(line (pt 117 12)(pt 121 8))
 	)
-	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
 )
 (pin
 	(output)
-	(rect 1024 256 1232 272)
-	(text "OUTPUT" (rect 169 0 207 10)(font "Arial" (font_size 6)))
-	(text "EscreveRegDado[31..0]" (rect 5 0 114 17)(font "Intel Clear" ))
-	(pt 208 8)
+	(rect 1056 256 1232 272)
+	(text "OUTPUT" (rect 137 0 175 10)(font "Arial" (font_size 6)))
+	(text "EscreveRegDado[31..0]" (rect -33 0 86 12)(font "Arial" ))
+	(pt 176 8)
 	(drawing
-		(line (pt 208 8)(pt 156 8))
-		(line (pt 156 4)(pt 130 4))
-		(line (pt 156 12)(pt 130 12))
-		(line (pt 156 12)(pt 156 4))
-		(line (pt 130 4)(pt 126 8))
-		(line (pt 126 8)(pt 130 12))
-		(line (pt 130 12)(pt 126 8))
+		(line (pt 176 8)(pt 124 8))
+		(line (pt 124 4)(pt 98 4))
+		(line (pt 124 12)(pt 98 12))
+		(line (pt 124 12)(pt 124 4))
+		(line (pt 98 4)(pt 94 8))
+		(line (pt 94 8)(pt 98 12))
+		(line (pt 98 12)(pt 94 8))
 	)
 	(flipy)
 )
 (pin
 	(output)
-	(rect 1872 288 2061 304)
+	(rect 1872 288 2048 304)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "entradaAULA[31..0]" (rect 90 0 183 17)(font "Intel Clear" ))
+	(text "entradaAULA[31..0]" (rect 90 0 186 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -70,9 +70,9 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 1872 336 2061 352)
+	(rect 1872 336 2048 352)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "entradaBULA[31..0]" (rect 90 0 183 17)(font "Intel Clear" ))
+	(text "entradaBULA[31..0]" (rect 90 0 186 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -86,9 +86,9 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 2408 280 2597 296)
+	(rect 2408 280 2584 296)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "saidaULAReg[31..0]" (rect 90 0 183 17)(font "Intel Clear" ))
+	(text "saidaULAReg[31..0]" (rect 90 0 189 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -104,7 +104,7 @@ refer to the applicable agreement for further details.
 	(output)
 	(rect -752 264 -576 280)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "PC_ENT[31..0]" (rect 90 0 158 17)(font "Intel Clear" ))
+	(text "PC_ENT[31..0]" (rect 90 0 164 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -118,35 +118,35 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect -832 304 -648 320)
-	(text "OUTPUT" (rect 145 0 183 10)(font "Arial" (font_size 6)))
-	(text "PC_SAIDA[31..0]" (rect 5 0 91 12)(font "Arial" ))
-	(pt 184 8)
+	(rect -824 304 -648 320)
+	(text "OUTPUT" (rect 137 0 175 10)(font "Arial" (font_size 6)))
+	(text "PC_SAIDA[31..0]" (rect 0 0 86 12)(font "Arial" ))
+	(pt 176 8)
 	(drawing
-		(line (pt 184 8)(pt 132 8))
-		(line (pt 132 4)(pt 106 4))
-		(line (pt 132 12)(pt 106 12))
-		(line (pt 132 12)(pt 132 4))
-		(line (pt 106 4)(pt 102 8))
-		(line (pt 102 8)(pt 106 12))
-		(line (pt 106 12)(pt 102 8))
+		(line (pt 176 8)(pt 124 8))
+		(line (pt 124 4)(pt 98 4))
+		(line (pt 124 12)(pt 98 12))
+		(line (pt 124 12)(pt 124 4))
+		(line (pt 98 4)(pt 94 8))
+		(line (pt 94 8)(pt 98 12))
+		(line (pt 98 12)(pt 94 8))
 	)
 	(flipy)
 )
 (pin
 	(output)
-	(rect 16 248 256 264)
-	(text "OUTPUT" (rect 201 0 239 10)(font "Arial" (font_size 6)))
-	(text "SAIDAMEMDADOINST[31..0]" (rect 5 0 150 12)(font "Arial" ))
-	(pt 240 8)
+	(rect 80 248 256 264)
+	(text "OUTPUT" (rect 137 0 175 10)(font "Arial" (font_size 6)))
+	(text "SAIDAMEMDADOINST[31..0]" (rect -59 0 86 12)(font "Arial" ))
+	(pt 176 8)
 	(drawing
-		(line (pt 240 8)(pt 188 8))
-		(line (pt 188 4)(pt 162 4))
-		(line (pt 188 12)(pt 162 12))
-		(line (pt 188 12)(pt 188 4))
-		(line (pt 162 4)(pt 158 8))
-		(line (pt 158 8)(pt 162 12))
-		(line (pt 162 12)(pt 158 8))
+		(line (pt 176 8)(pt 124 8))
+		(line (pt 124 4)(pt 98 4))
+		(line (pt 124 12)(pt 98 12))
+		(line (pt 124 12)(pt 124 4))
+		(line (pt 98 4)(pt 94 8))
+		(line (pt 94 8)(pt 98 12))
+		(line (pt 98 12)(pt 94 8))
 	)
 	(flipy)
 )
@@ -169,24 +169,24 @@ refer to the applicable agreement for further details.
 (pin
 	(output)
 	(rect 592 208 768 224)
-	(text "OUTPUT" (rect 140 0 178 10)(font "Arial" (font_size 6)))
-	(text "REGINST[31..0]" (rect 5 0 85 12)(font "Arial" ))
+	(text "OUTPUT" (rect 137 0 175 10)(font "Arial" (font_size 6)))
+	(text "REGINST[31..0]" (rect 6 0 86 12)(font "Arial" ))
 	(pt 176 8)
 	(drawing
-		(line (pt 179 8)(pt 127 8))
-		(line (pt 127 4)(pt 101 4))
-		(line (pt 127 12)(pt 101 12))
-		(line (pt 127 12)(pt 127 4))
-		(line (pt 101 4)(pt 97 8))
-		(line (pt 97 8)(pt 101 12))
-		(line (pt 101 12)(pt 97 8))
+		(line (pt 176 8)(pt 124 8))
+		(line (pt 124 4)(pt 98 4))
+		(line (pt 124 12)(pt 98 12))
+		(line (pt 124 12)(pt 124 4))
+		(line (pt 98 4)(pt 94 8))
+		(line (pt 94 8)(pt 98 12))
+		(line (pt 98 12)(pt 94 8))
 	)
 	(flipy)
 )
 (symbol
 	(rect -608 128 -408 240)
 	(text "PC" (rect 5 0 20 12)(font "Arial" ))
-	(text "inst1" (rect 8 96 30 113)(font "Intel Clear" ))
+	(text "inst1" (rect 8 96 31 108)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -212,7 +212,7 @@ refer to the applicable agreement for further details.
 		(pt 200 32)
 		(output)
 		(text "oSaida[31..0]" (rect 0 0 64 12)(font "Arial" ))
-		(text "oSaida[31..0]" (rect 125 27 189 39)(font "Arial" ))
+		(text "oSaida[31..0]" (rect 125 27 179 39)(font "Arial" ))
 		(line (pt 200 32)(pt 184 32)(line_width 3))
 	)
 	(drawing
@@ -222,7 +222,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 1024 104 1256 248)
 	(text "BancoReg" (rect 5 0 55 12)(font "Arial" ))
-	(text "inst5" (rect 8 128 30 145)(font "Intel Clear" ))
+	(text "inst5" (rect 8 128 31 140)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -269,21 +269,21 @@ refer to the applicable agreement for further details.
 		(pt 232 32)
 		(output)
 		(text "oDado1[31..0]" (rect 0 0 69 12)(font "Arial" ))
-		(text "oDado1[31..0]" (rect 153 27 222 39)(font "Arial" ))
+		(text "oDado1[31..0]" (rect 153 27 211 39)(font "Arial" ))
 		(line (pt 232 32)(pt 216 32)(line_width 3))
 	)
 	(port
 		(pt 232 48)
 		(output)
 		(text "oDado2[31..0]" (rect 0 0 69 12)(font "Arial" ))
-		(text "oDado2[31..0]" (rect 153 43 222 55)(font "Arial" ))
+		(text "oDado2[31..0]" (rect 153 43 211 55)(font "Arial" ))
 		(line (pt 232 48)(pt 216 48)(line_width 3))
 	)
 	(port
 		(pt 232 64)
 		(output)
 		(text "oDebug[31..0]" (rect 0 0 69 12)(font "Arial" ))
-		(text "oDebug[31..0]" (rect 153 59 222 71)(font "Arial" ))
+		(text "oDebug[31..0]" (rect 153 59 211 71)(font "Arial" ))
 		(line (pt 232 64)(pt 216 64)(line_width 3))
 	)
 	(parameter
@@ -297,43 +297,28 @@ refer to the applicable agreement for further details.
 	(annotation_block (parameter)(rect 1256 64 1448 104))
 )
 (symbol
-	(rect 1136 400 1344 480)
-	(text "shiftLeft" (rect 5 0 47 12)(font "Arial" ))
-	(text "inst7" (rect 8 64 30 81)(font "Intel Clear" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "iEntrada[31..0]" (rect 0 0 71 12)(font "Arial" ))
-		(text "iEntrada[31..0]" (rect 21 27 92 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 208 32)
-		(output)
-		(text "oSaida[31..0]" (rect 0 0 64 12)(font "Arial" ))
-		(text "oSaida[31..0]" (rect 133 27 197 39)(font "Arial" ))
-		(line (pt 208 32)(pt 192 32)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 192 64))
-	)
-)
-(symbol
 	(rect 1344 104 1552 184)
 	(text "regA" (rect 5 0 28 12)(font "Arial" ))
-	(text "inst8" (rect 8 64 30 81)(font "Intel Clear" ))
+	(text "inst8" (rect 8 64 31 76)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
+		(text "iCLK" (rect 0 0 23 12)(font "Arial" ))
+		(text "iCLK" (rect 21 27 44 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
 		(text "iEntrada[31..0]" (rect 0 0 71 12)(font "Arial" ))
-		(text "iEntrada[31..0]" (rect 21 27 92 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
+		(text "iEntrada[31..0]" (rect 21 43 92 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
 	)
 	(port
 		(pt 208 32)
 		(output)
 		(text "oSaida[31..0]" (rect 0 0 64 12)(font "Arial" ))
-		(text "oSaida[31..0]" (rect 133 27 197 39)(font "Arial" ))
+		(text "oSaida[31..0]" (rect 133 27 187 39)(font "Arial" ))
 		(line (pt 208 32)(pt 192 32)(line_width 3))
 	)
 	(drawing
@@ -343,7 +328,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 1336 -72 1528 40)
 	(text "PCback" (rect 5 0 43 12)(font "Arial" ))
-	(text "inst10" (rect 8 96 36 113)(font "Intel Clear" ))
+	(text "inst10" (rect 8 96 37 108)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -369,7 +354,7 @@ refer to the applicable agreement for further details.
 		(pt 192 32)
 		(output)
 		(text "oPC[31..0]" (rect 0 0 53 12)(font "Arial" ))
-		(text "oPC[31..0]" (rect 127 27 180 39)(font "Arial" ))
+		(text "oPC[31..0]" (rect 127 27 171 39)(font "Arial" ))
 		(line (pt 192 32)(pt 176 32)(line_width 3))
 	)
 	(drawing
@@ -379,7 +364,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 1920 168 2128 280)
 	(text "ULA" (rect 5 0 27 12)(font "Arial" ))
-	(text "inst13" (rect 8 96 36 113)(font "Intel Clear" ))
+	(text "inst13" (rect 8 96 37 108)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -405,14 +390,14 @@ refer to the applicable agreement for further details.
 		(pt 208 32)
 		(output)
 		(text "oResult[31..0]" (rect 0 0 69 12)(font "Arial" ))
-		(text "oResult[31..0]" (rect 129 27 198 39)(font "Arial" ))
+		(text "oResult[31..0]" (rect 129 27 187 39)(font "Arial" ))
 		(line (pt 208 32)(pt 192 32)(line_width 3))
 	)
 	(port
 		(pt 208 48)
 		(output)
 		(text "oZero" (rect 0 0 28 12)(font "Arial" ))
-		(text "oZero" (rect 164 43 192 55)(font "Arial" ))
+		(text "oZero" (rect 164 43 187 55)(font "Arial" ))
 		(line (pt 208 48)(pt 192 48))
 	)
 	(drawing
@@ -422,41 +407,26 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 2192 168 2400 248)
 	(text "SaidaULA" (rect 5 0 54 12)(font "Arial" ))
-	(text "inst14" (rect 8 64 36 81)(font "Intel Clear" ))
+	(text "inst14" (rect 8 64 37 76)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
+		(text "iCLK" (rect 0 0 23 12)(font "Arial" ))
+		(text "iCLK" (rect 21 27 44 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
 		(text "iEntrada[31..0]" (rect 0 0 71 12)(font "Arial" ))
-		(text "iEntrada[31..0]" (rect 21 27 92 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
+		(text "iEntrada[31..0]" (rect 21 43 92 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
 	)
 	(port
 		(pt 208 32)
 		(output)
 		(text "oSaida[31..0]" (rect 0 0 64 12)(font "Arial" ))
-		(text "oSaida[31..0]" (rect 133 27 197 39)(font "Arial" ))
-		(line (pt 208 32)(pt 192 32)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 192 64))
-	)
-)
-(symbol
-	(rect 504 280 712 360)
-	(text "RegDado" (rect 5 0 51 12)(font "Arial" ))
-	(text "inst4" (rect 8 64 31 76)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "iEntrada[31..0]" (rect 0 0 71 12)(font "Arial" ))
-		(text "iEntrada[31..0]" (rect 21 27 92 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 208 32)
-		(output)
-		(text "oSaida[31..0]" (rect 0 0 64 12)(font "Arial" ))
-		(text "oSaida[31..0]" (rect 133 27 197 39)(font "Arial" ))
+		(text "oSaida[31..0]" (rect 133 27 187 39)(font "Arial" ))
 		(line (pt 208 32)(pt 192 32)(line_width 3))
 	)
 	(drawing
@@ -466,7 +436,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 720 352 752 384)
 	(text "GND" (rect 8 16 29 26)(font "Arial" (font_size 6)))
-	(text "inst16" (rect 3 21 31 38)(font "Intel Clear" )(invisible))
+	(text "inst16" (rect 3 21 32 33)(font "Arial" )(invisible))
 	(port
 		(pt 16 0)
 		(output)
@@ -481,45 +451,9 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 488 80 696 192)
-	(text "RegInst" (rect 5 0 43 12)(font "Arial" ))
-	(text "inst3" (rect 8 96 31 108)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "iCLK" (rect 0 0 23 12)(font "Arial" ))
-		(text "iCLK" (rect 21 27 44 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "escreveIR" (rect 0 0 51 12)(font "Arial" ))
-		(text "escreveIR" (rect 21 43 72 55)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48))
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "iEntrada[31..0]" (rect 0 0 71 12)(font "Arial" ))
-		(text "iEntrada[31..0]" (rect 21 59 92 71)(font "Arial" ))
-		(line (pt 0 64)(pt 16 64)(line_width 3))
-	)
-	(port
-		(pt 208 32)
-		(output)
-		(text "oSaida[31..0]" (rect 0 0 64 12)(font "Arial" ))
-		(text "oSaida[31..0]" (rect 133 27 197 39)(font "Arial" ))
-		(line (pt 208 32)(pt 192 32)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 192 96))
-	)
-)
-(symbol
 	(rect 1344 360 1376 392)
 	(text "GND" (rect 8 16 29 26)(font "Arial" (font_size 6)))
-	(text "inst17" (rect 3 21 31 38)(font "Intel Clear" )(invisible))
+	(text "inst17" (rect 3 21 32 33)(font "Arial" )(invisible))
 	(port
 		(pt 16 0)
 		(output)
@@ -536,7 +470,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 1512 368 1544 400)
 	(text "GND" (rect 8 16 29 26)(font "Arial" (font_size 6)))
-	(text "inst20" (rect 3 21 31 38)(font "Intel Clear" )(invisible))
+	(text "inst20" (rect 3 21 32 33)(font "Arial" )(invisible))
 	(port
 		(pt 16 0)
 		(output)
@@ -553,7 +487,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 2416 104 2448 136)
 	(text "GND" (rect 8 16 29 26)(font "Arial" (font_size 6)))
-	(text "inst22" (rect 3 21 31 38)(font "Intel Clear" )(invisible))
+	(text "inst22" (rect 3 21 32 33)(font "Arial" )(invisible))
 	(port
 		(pt 16 0)
 		(output)
@@ -570,7 +504,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 2448 144 2480 176)
 	(text "GND" (rect 8 16 29 26)(font "Arial" (font_size 6)))
-	(text "inst23" (rect 3 21 31 38)(font "Intel Clear" )(invisible))
+	(text "inst23" (rect 3 21 32 33)(font "Arial" )(invisible))
 	(port
 		(pt 16 0)
 		(output)
@@ -587,7 +521,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 1032 -328 1096 -280)
 	(text "OR2" (rect 45 0 63 10)(font "Arial" (font_size 6)))
-	(text "inst25" (rect 33 37 61 54)(font "Intel Clear" ))
+	(text "inst25" (rect 32 37 61 49)(font "Arial" ))
 	(port
 		(pt 64 32)
 		(input)
@@ -606,7 +540,7 @@ refer to the applicable agreement for further details.
 		(pt 0 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect -1 15 16 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 2 15 16 27)(font "Courier New" (bold))(invisible))
 		(line (pt 16 24)(pt 0 24))
 	)
 	(drawing
@@ -621,7 +555,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 1144 -336 1208 -288)
 	(text "AND2" (rect 39 0 63 10)(font "Arial" (font_size 6)))
-	(text "inst26" (rect 33 37 61 54)(font "Intel Clear" ))
+	(text "inst26" (rect 32 37 61 49)(font "Arial" ))
 	(port
 		(pt 64 16)
 		(input)
@@ -640,7 +574,7 @@ refer to the applicable agreement for further details.
 		(pt 0 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect -1 15 16 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 2 15 16 27)(font "Courier New" (bold))(invisible))
 		(line (pt 22 24)(pt 0 24))
 	)
 	(drawing
@@ -654,7 +588,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect -592 48 -560 80)
 	(text "GND" (rect 8 16 29 26)(font "Arial" (font_size 6)))
-	(text "inst29" (rect 3 21 31 38)(font "Intel Clear" )(invisible))
+	(text "inst29" (rect 3 21 32 33)(font "Arial" )(invisible))
 	(port
 		(pt 16 0)
 		(output)
@@ -671,7 +605,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 48 96 280 240)
 	(text "MemDadoInst" (rect 5 0 73 12)(font "Arial" ))
-	(text "inst30" (rect 8 128 36 145)(font "Intel Clear" ))
+	(text "inst30" (rect 8 128 37 140)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -711,14 +645,14 @@ refer to the applicable agreement for further details.
 		(pt 232 32)
 		(output)
 		(text "oDado[31..0]" (rect 0 0 63 12)(font "Arial" ))
-		(text "oDado[31..0]" (rect 158 27 221 39)(font "Arial" ))
+		(text "oDado[31..0]" (rect 158 27 211 39)(font "Arial" ))
 		(line (pt 232 32)(pt 216 32)(line_width 3))
 	)
 	(port
 		(pt 232 48)
 		(output)
 		(text "oDebug[31..0]" (rect 0 0 69 12)(font "Arial" ))
-		(text "oDebug[31..0]" (rect 153 43 222 55)(font "Arial" ))
+		(text "oDebug[31..0]" (rect 153 43 211 55)(font "Arial" ))
 		(line (pt 232 48)(pt 216 48)(line_width 3))
 	)
 	(drawing
@@ -726,7 +660,7 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 792 392 984 472)
+	(rect 792 376 984 456)
 	(text "GerImm" (rect 5 0 45 12)(font "Arial" ))
 	(text "inst182947510" (rect 8 64 78 76)(font "Arial" ))
 	(port
@@ -740,7 +674,7 @@ refer to the applicable agreement for further details.
 		(pt 192 32)
 		(output)
 		(text "oSaida[31..0]" (rect 0 0 64 12)(font "Arial" ))
-		(text "oSaida[31..0]" (rect 117 27 181 39)(font "Arial" ))
+		(text "oSaida[31..0]" (rect 117 27 171 39)(font "Arial" ))
 		(line (pt 192 32)(pt 176 32)(line_width 3))
 	)
 	(drawing
@@ -790,7 +724,7 @@ refer to the applicable agreement for further details.
 		(pt 192 32)
 		(output)
 		(text "oSaida[31..0]" (rect 0 0 64 12)(font "Arial" ))
-		(text "oSaida[31..0]" (rect 117 27 181 39)(font "Arial" ))
+		(text "oSaida[31..0]" (rect 117 27 171 39)(font "Arial" ))
 		(line (pt 192 32)(pt 176 32)(line_width 3))
 	)
 	(drawing
@@ -840,7 +774,7 @@ refer to the applicable agreement for further details.
 		(pt 192 32)
 		(output)
 		(text "oSaida[31..0]" (rect 0 0 64 12)(font "Arial" ))
-		(text "oSaida[31..0]" (rect 117 27 181 39)(font "Arial" ))
+		(text "oSaida[31..0]" (rect 117 27 171 39)(font "Arial" ))
 		(line (pt 192 32)(pt 176 32)(line_width 3))
 	)
 	(drawing
@@ -890,7 +824,7 @@ refer to the applicable agreement for further details.
 		(pt 192 32)
 		(output)
 		(text "oSaida[31..0]" (rect 0 0 64 12)(font "Arial" ))
-		(text "oSaida[31..0]" (rect 117 27 181 39)(font "Arial" ))
+		(text "oSaida[31..0]" (rect 117 27 171 39)(font "Arial" ))
 		(line (pt 192 32)(pt 176 32)(line_width 3))
 	)
 	(drawing
@@ -940,7 +874,7 @@ refer to the applicable agreement for further details.
 		(pt 192 32)
 		(output)
 		(text "oSaida[31..0]" (rect 0 0 64 12)(font "Arial" ))
-		(text "oSaida[31..0]" (rect 117 27 181 39)(font "Arial" ))
+		(text "oSaida[31..0]" (rect 117 27 171 39)(font "Arial" ))
 		(line (pt 192 32)(pt 176 32)(line_width 3))
 	)
 	(drawing
@@ -984,7 +918,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 1592 176 1624 208)
 	(text "GND" (rect 8 16 29 26)(font "Arial" (font_size 6)))
-	(text "inst21sadvasdf" (rect 3 21 73 38)(font "Intel Clear" )(invisible))
+	(text "inst21sadvasdf" (rect 3 21 79 33)(font "Arial" )(invisible))
 	(port
 		(pt 16 0)
 		(output)
@@ -1001,7 +935,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect -360 280 -328 312)
 	(text "GND" (rect 8 16 29 26)(font "Arial" (font_size 6)))
-	(text "inst28sadfasdfassdfas" (rect 3 21 106 38)(font "Intel Clear" )(invisible))
+	(text "inst28sadfasdfassdfas" (rect 3 21 117 33)(font "Arial" )(invisible))
 	(port
 		(pt 16 0)
 		(output)
@@ -1018,19 +952,26 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 1344 184 1552 264)
 	(text "regB" (rect 5 0 27 12)(font "Arial" ))
-	(text "inst946513" (rect 8 64 59 81)(font "Intel Clear" ))
+	(text "inst946513" (rect 8 64 61 76)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
+		(text "iCLK" (rect 0 0 23 12)(font "Arial" ))
+		(text "iCLK" (rect 21 27 44 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
 		(text "iEntrada[31..0]" (rect 0 0 71 12)(font "Arial" ))
-		(text "iEntrada[31..0]" (rect 21 27 92 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
+		(text "iEntrada[31..0]" (rect 21 43 92 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
 	)
 	(port
 		(pt 208 32)
 		(output)
 		(text "oSaida[31..0]" (rect 0 0 64 12)(font "Arial" ))
-		(text "oSaida[31..0]" (rect 133 27 197 39)(font "Arial" ))
+		(text "oSaida[31..0]" (rect 133 27 187 39)(font "Arial" ))
 		(line (pt 208 32)(pt 192 32)(line_width 3))
 	)
 	(drawing
@@ -1040,7 +981,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 1392 344 1424 360)
 	(text "VCC" (rect 7 0 27 10)(font "Arial" (font_size 6)))
-	(text "inst19sadfasdf13413" (rect 3 5 100 22)(font "Intel Clear" )(invisible))
+	(text "inst19sadfasdf13413" (rect 3 5 106 17)(font "Arial" )(invisible))
 	(port
 		(pt 16 16)
 		(output)
@@ -1055,7 +996,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect -384 240 -352 272)
 	(text "GND" (rect 8 16 29 26)(font "Arial" (font_size 6)))
-	(text "inst27sadfjgha12312" (rect 3 21 100 38)(font "Intel Clear" )(invisible))
+	(text "inst27sadfjgha12312" (rect 3 21 104 33)(font "Arial" )(invisible))
 	(port
 		(pt 16 0)
 		(output)
@@ -1112,11 +1053,98 @@ refer to the applicable agreement for further details.
 		(pt 192 32)
 		(output)
 		(text "oSaida[31..0]" (rect 0 0 64 12)(font "Arial" ))
-		(text "oSaida[31..0]" (rect 117 27 181 39)(font "Arial" ))
+		(text "oSaida[31..0]" (rect 117 27 171 39)(font "Arial" ))
 		(line (pt 192 32)(pt 176 32)(line_width 3))
 	)
 	(drawing
 		(rectangle (rect 16 16 176 128))
+	)
+)
+(symbol
+	(rect 480 80 688 192)
+	(text "RegInst" (rect 5 0 43 12)(font "Arial" ))
+	(text "inst3" (rect 8 96 31 108)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "iCLK" (rect 0 0 23 12)(font "Arial" ))
+		(text "iCLK" (rect 21 27 44 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "escreveIR" (rect 0 0 51 12)(font "Arial" ))
+		(text "escreveIR" (rect 21 43 72 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "iEntrada[31..0]" (rect 0 0 71 12)(font "Arial" ))
+		(text "iEntrada[31..0]" (rect 21 59 92 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 208 32)
+		(output)
+		(text "oSaida[31..0]" (rect 0 0 64 12)(font "Arial" ))
+		(text "oSaida[31..0]" (rect 133 27 187 39)(font "Arial" ))
+		(line (pt 208 32)(pt 192 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 192 96))
+	)
+)
+(symbol
+	(rect 504 280 712 360)
+	(text "RegDado" (rect 5 0 51 12)(font "Arial" ))
+	(text "inst4" (rect 8 64 31 76)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "iCLK" (rect 0 0 23 12)(font "Arial" ))
+		(text "iCLK" (rect 21 27 44 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "iEntrada[31..0]" (rect 0 0 71 12)(font "Arial" ))
+		(text "iEntrada[31..0]" (rect 21 43 92 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 208 32)
+		(output)
+		(text "oSaida[31..0]" (rect 0 0 64 12)(font "Arial" ))
+		(text "oSaida[31..0]" (rect 133 27 187 39)(font "Arial" ))
+		(line (pt 208 32)(pt 192 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 192 64))
+	)
+)
+(symbol
+	(rect 1136 392 1344 472)
+	(text "shiftLeft" (rect 5 0 47 12)(font "Arial" ))
+	(text "inst7" (rect 8 64 31 76)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "iEntrada[31..0]" (rect 0 0 71 12)(font "Arial" ))
+		(text "iEntrada[31..0]" (rect 21 27 92 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 208 32)
+		(output)
+		(text "oSaida[31..0]" (rect 0 0 64 12)(font "Arial" ))
+		(text "oSaida[31..0]" (rect 133 27 187 39)(font "Arial" ))
+		(line (pt 208 32)(pt 192 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 192 64))
 	)
 )
 (symbol
@@ -1240,33 +1268,13 @@ refer to the applicable agreement for further details.
 	)
 )
 (connector
-	(pt 448 312)
-	(pt 504 312)
-	(bus)
-)
-(connector
 	(pt 720 312)
 	(pt 712 312)
 	(bus)
 )
 (connector
-	(pt 1256 136)
-	(pt 1344 136)
-	(bus)
-)
-(connector
 	(pt 1256 152)
 	(pt 1296 152)
-	(bus)
-)
-(connector
-	(pt 1296 152)
-	(pt 1296 216)
-	(bus)
-)
-(connector
-	(pt 1344 216)
-	(pt 1296 216)
 	(bus)
 )
 (connector
@@ -1280,16 +1288,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1344 432)
-	(pt 1600 432)
-	(bus)
-)
-(connector
-	(pt 1600 432)
-	(pt 1600 320)
-	(bus)
-)
-(connector
 	(pt 1600 320)
 	(pt 1608 320)
 	(bus)
@@ -1297,11 +1295,6 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 1608 304)
 	(pt 1080 304)
-	(bus)
-)
-(connector
-	(pt 1080 432)
-	(pt 1136 432)
 	(bus)
 )
 (connector
@@ -1345,16 +1338,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 2160 48)
-	(pt 2160 200)
-	(bus)
-)
-(connector
-	(pt 2160 200)
-	(pt 2192 200)
-	(bus)
-)
-(connector
 	(pt 2432 104)
 	(pt 2432 80)
 	(bus)
@@ -1375,10 +1358,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 488 104)
-	(pt 488 112)
-)
-(connector
 	(pt 472 104)
 	(pt 472 88)
 )
@@ -1391,20 +1370,12 @@ refer to the applicable agreement for further details.
 	(pt 1024 136)
 )
 (connector
-	(pt 1336 -40)
-	(pt 984 -40)
-)
-(connector
 	(pt 984 -40)
 	(pt 984 88)
 )
 (connector
 	(pt 472 88)
 	(pt 984 88)
-)
-(connector
-	(pt 984 88)
-	(pt 1016 88)
 )
 (connector
 	(pt 768 112)
@@ -1462,21 +1433,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 2408 64)
-	(pt 2408 200)
-	(bus)
-)
-(connector
-	(pt 2408 200)
-	(pt 2408 288)
-	(bus)
-)
-(connector
-	(pt 2408 288)
-	(pt 2408 600)
-	(bus)
-)
-(connector
 	(pt 2688 32)
 	(pt 2688 -328)
 	(bus)
@@ -1510,18 +1466,6 @@ refer to the applicable agreement for further details.
 	(pt 1024 -432)
 )
 (connector
-	(pt 488 128)
-	(pt 448 128)
-)
-(connector
-	(pt 448 -432)
-	(pt 448 128)
-)
-(connector
-	(pt 472 104)
-	(pt 488 104)
-)
-(connector
 	(pt 2688 -328)
 	(pt -832 -328)
 	(bus)
@@ -1534,10 +1478,6 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 1032 -304)
 	(pt -816 -304)
-)
-(connector
-	(pt -672 104)
-	(pt -648 104)
 )
 (connector
 	(pt -832 192)
@@ -1645,11 +1585,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 448 144)
-	(pt 448 312)
-	(bus)
-)
-(connector
 	(pt 1576 544)
 	(pt -8 544)
 	(bus)
@@ -1683,14 +1618,6 @@ refer to the applicable agreement for further details.
 	(pt 16 128)
 )
 (connector
-	(pt -648 104)
-	(pt 16 104)
-)
-(connector
-	(pt 16 104)
-	(pt 472 104)
-)
-(connector
 	(pt 280 128)
 	(pt 352 128)
 	(bus)
@@ -1698,16 +1625,6 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 352 128)
 	(pt 352 144)
-	(bus)
-)
-(connector
-	(pt 352 144)
-	(pt 448 144)
-	(bus)
-)
-(connector
-	(pt 448 144)
-	(pt 488 144)
 	(bus)
 )
 (connector
@@ -1764,26 +1681,6 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 1592 256)
 	(pt 1608 256)
-	(bus)
-)
-(connector
-	(pt 768 424)
-	(pt 792 424)
-	(bus)
-)
-(connector
-	(pt 1080 424)
-	(pt 984 424)
-	(bus)
-)
-(connector
-	(pt 1080 304)
-	(pt 1080 424)
-	(bus)
-)
-(connector
-	(pt 1080 424)
-	(pt 1080 432)
 	(bus)
 )
 (connector
@@ -1932,21 +1829,6 @@ refer to the applicable agreement for further details.
 (connector
 	(pt -304 176)
 	(pt -304 600)
-	(bus)
-)
-(connector
-	(pt 768 184)
-	(pt 768 200)
-	(bus)
-)
-(connector
-	(pt 768 200)
-	(pt 768 216)
-	(bus)
-)
-(connector
-	(pt 768 216)
-	(pt 768 424)
 	(bus)
 )
 (connector
@@ -2210,17 +2092,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 696 112)
-	(pt 728 112)
-	(bus)
-)
-(connector
-	(text "INSTRR[31..0]" (rect 727 96 791 113)(font "Intel Clear" ))
-	(pt 728 112)
-	(pt 768 112)
-	(bus)
-)
-(connector
 	(pt 1848 -120)
 	(pt 1848 -80)
 	(bus)
@@ -2242,13 +2113,236 @@ refer to the applicable agreement for further details.
 	(pt -648 -280)
 	(pt 736 -280)
 )
+(connector
+	(pt 480 104)
+	(pt 480 112)
+)
+(connector
+	(pt 448 128)
+	(pt 480 128)
+)
+(connector
+	(pt 448 -432)
+	(pt 448 128)
+)
+(connector
+	(pt 472 104)
+	(pt 480 104)
+)
+(connector
+	(text "INSTRR[31..0]" (rect 727 96 791 113)(font "Intel Clear" ))
+	(pt 728 112)
+	(pt 768 112)
+	(bus)
+)
+(connector
+	(pt 688 112)
+	(pt 728 112)
+	(bus)
+)
+(connector
+	(pt 448 144)
+	(pt 448 328)
+	(bus)
+)
+(connector
+	(pt 352 144)
+	(pt 448 144)
+	(bus)
+)
+(connector
+	(pt 448 144)
+	(pt 480 144)
+	(bus)
+)
+(connector
+	(pt 448 328)
+	(pt 504 328)
+	(bus)
+)
+(connector
+	(pt 408 104)
+	(pt 408 312)
+)
+(connector
+	(pt 408 312)
+	(pt 504 312)
+)
+(connector
+	(pt 16 104)
+	(pt 408 104)
+)
+(connector
+	(pt 408 104)
+	(pt 472 104)
+)
+(connector
+	(pt 2192 216)
+	(pt 2160 216)
+	(bus)
+)
+(connector
+	(pt 2160 48)
+	(pt 2160 200)
+	(bus)
+)
+(connector
+	(pt 2160 200)
+	(pt 2160 216)
+	(bus)
+)
+(connector
+	(pt 1296 232)
+	(pt 1296 152)
+	(bus)
+)
+(connector
+	(pt 1296 232)
+	(pt 1344 232)
+	(bus)
+)
+(connector
+	(pt 1344 152)
+	(pt 1312 152)
+	(bus)
+)
+(connector
+	(pt 1312 152)
+	(pt 1312 136)
+	(bus)
+)
+(connector
+	(pt 1312 136)
+	(pt 1256 136)
+	(bus)
+)
+(connector
+	(pt 984 88)
+	(pt 1016 88)
+)
+(connector
+	(pt 1016 88)
+	(pt 1328 88)
+)
+(connector
+	(pt 1344 216)
+	(pt 1328 216)
+)
+(connector
+	(pt 1344 136)
+	(pt 1328 136)
+)
+(connector
+	(pt 1328 88)
+	(pt 1328 136)
+)
+(connector
+	(pt 1328 136)
+	(pt 1328 216)
+)
+(connector
+	(pt 1320 -40)
+	(pt 1320 -56)
+)
+(connector
+	(pt 1320 -56)
+	(pt 2184 -56)
+)
+(connector
+	(pt 1336 -40)
+	(pt 1320 -40)
+)
+(connector
+	(pt 1320 -40)
+	(pt 984 -40)
+)
+(connector
+	(pt 2184 -56)
+	(pt 2184 200)
+)
+(connector
+	(pt 2184 200)
+	(pt 2192 200)
+)
+(connector
+	(pt -664 104)
+	(pt -648 104)
+)
+(connector
+	(pt -648 104)
+	(pt 16 104)
+)
+(connector
+	(pt 2408 64)
+	(pt 2408 200)
+	(bus)
+)
+(connector
+	(pt 2408 200)
+	(pt 2408 288)
+	(bus)
+)
+(connector
+	(pt 2408 288)
+	(pt 2408 600)
+	(bus)
+)
+(connector
+	(pt 768 184)
+	(pt 768 200)
+	(bus)
+)
+(connector
+	(pt 768 408)
+	(pt 792 408)
+	(bus)
+)
+(connector
+	(pt 1080 408)
+	(pt 984 408)
+	(bus)
+)
+(connector
+	(pt 768 200)
+	(pt 768 216)
+	(bus)
+)
+(connector
+	(pt 768 216)
+	(pt 768 408)
+	(bus)
+)
+(connector
+	(pt 1600 424)
+	(pt 1344 424)
+	(bus)
+)
+(connector
+	(pt 1600 320)
+	(pt 1600 424)
+	(bus)
+)
+(connector
+	(pt 1080 424)
+	(pt 1136 424)
+	(bus)
+)
+(connector
+	(pt 1080 304)
+	(pt 1080 408)
+	(bus)
+)
+(connector
+	(pt 1080 408)
+	(pt 1080 424)
+	(bus)
+)
 (junction (pt 768 200))
 (junction (pt 768 184))
 (junction (pt 768 168))
 (junction (pt 1496 288))
 (junction (pt 1528 288))
 (junction (pt 1288 -8))
-(junction (pt 2160 200))
 (junction (pt 2408 200))
 (junction (pt 752 600))
 (junction (pt 472 104))
@@ -2265,8 +2359,13 @@ refer to the applicable agreement for further details.
 (junction (pt 1576 272))
 (junction (pt 16 104))
 (junction (pt 448 144))
-(junction (pt 1080 424))
 (junction (pt -296 144))
 (junction (pt 768 216))
 (junction (pt 1848 -80))
+(junction (pt 408 104))
+(junction (pt 2160 200))
+(junction (pt 1016 88))
+(junction (pt 1328 136))
+(junction (pt 1320 -40))
+(junction (pt 1080 408))
 (text " " (rect 1416 360 1419 379)(font "Intel Clear" (font_size 8)))

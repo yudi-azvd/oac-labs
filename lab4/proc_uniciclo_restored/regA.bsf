@@ -26,9 +26,16 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 0 32)
 		(input)
+		(text "iCLK" (rect 0 0 21 12)(font "Arial" ))
+		(text "iCLK" (rect 21 27 42 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
 		(text "iEntrada[31..0]" (rect 0 0 56 12)(font "Arial" ))
-		(text "iEntrada[31..0]" (rect 21 27 77 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
+		(text "iEntrada[31..0]" (rect 21 43 77 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
 	)
 	(port
 		(pt 208 32)

@@ -3,6 +3,6 @@ module shiftLeft(
 	output [31:0] oSaida
 );
 
-assign oSaida = iEntrada << 1'b0;
+assign oSaida = iEntrada << 1'b1;
 
 endmodule 
