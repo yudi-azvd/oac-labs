@@ -60,9 +60,9 @@ always @(*)
 			oEscreveReg					<= 1'b0;
 			oEscreveMem					<= 1'b0;
 			oLeMem						<= 1'b1;
-			oULAControl					<= 3'b010;
+			oULAControl					<= 3'b010; 
 			
-			nx_state 					<= ST_DECODE;
+			nx_state 					<= ST_DECODE; 
 		end
 		
 //		ST_FETCH1:		// fetch_1

@@ -170,7 +170,7 @@ refer to the applicable agreement for further details.
 	(output)
 	(rect 592 208 768 224)
 	(text "OUTPUT" (rect 140 0 178 10)(font "Arial" (font_size 6)))
-	(text "REGINST[31..0]" (rect 5 0 86 12)(font "Arial" ))
+	(text "REGINST[31..0]" (rect 5 0 85 12)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 179 8)(pt 127 8))
@@ -1120,7 +1120,7 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 704 -312 944 -40)
+	(rect 736 -312 976 -40)
 	(text "Controlador_multiciclo" (rect 5 0 113 12)(font "Arial" ))
 	(text "instalksdhfalsf" (rect 8 256 81 268)(font "Arial" ))
 	(port
@@ -2043,7 +2043,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "<<__$DEF_ALIAS1899>>" (rect 1576 136 1694 153)(font "Intel Clear" )(invisible))
 	(pt 1624 152)
 	(pt 1568 152)
 	(bus)
@@ -2051,6 +2050,30 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 2000 0)
 	(pt 2000 -8)
+)
+(connector
+	(pt 1848 -80)
+	(pt 1960 -80)
+)
+(connector
+	(pt 2000 -8)
+	(pt 1960 -8)
+)
+(connector
+	(text "ULACTRL[3]" (rect 1944 -66 1961 -7)(font "Intel Clear" )(vertical))
+	(pt 1960 -8)
+	(pt 1960 -80)
+)
+(connector
+	(pt 1000 -64)
+	(pt 992 -64)
+	(bus)
+)
+(connector
+	(text "ULACTRL[3..0]" (rect 1863 184 1932 201)(font "Intel Clear" ))
+	(pt 1848 200)
+	(pt 1920 200)
+	(bus)
 )
 (connector
 	(pt 1128 -296)
@@ -2090,31 +2113,14 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1848 -80)
-	(pt 1960 -80)
-)
-(connector
-	(pt 2000 -8)
-	(pt 1960 -8)
-)
-(connector
-	(text "ULACTRL[3]" (rect 1944 -66 1961 -7)(font "Intel Clear" )(vertical))
-	(pt 1960 -8)
-	(pt 1960 -80)
-)
-(connector
 	(pt 728 112)
 	(pt 728 -264)
 	(bus)
 )
 (connector
 	(pt 728 -264)
-	(pt 704 -264)
+	(pt 736 -264)
 	(bus)
-)
-(connector
-	(pt -648 -280)
-	(pt 704 -280)
 )
 (connector
 	(pt 1592 256)
@@ -2133,58 +2139,58 @@ refer to the applicable agreement for further details.
 )
 (connector
 	(pt 1208 -280)
-	(pt 944 -280)
+	(pt 976 -280)
 )
 (connector
 	(pt 1128 -264)
-	(pt 944 -264)
+	(pt 976 -264)
 )
 (connector
 	(pt 1008 -248)
-	(pt 944 -248)
+	(pt 976 -248)
 )
 (connector
 	(pt 1232 -232)
-	(pt 944 -232)
+	(pt 976 -232)
 )
 (connector
 	(pt 1248 -216)
-	(pt 944 -216)
+	(pt 976 -216)
 )
 (connector
 	(pt 1024 -200)
-	(pt 944 -200)
+	(pt 976 -200)
 )
 (connector
 	(pt 1296 -184)
-	(pt 944 -184)
+	(pt 976 -184)
 )
 (connector
 	(pt 1056 -168)
-	(pt 944 -168)
+	(pt 976 -168)
 )
 (connector
-	(text "<<__$DEF_ALIAS25917>>" (rect 966 -168 1089 -151)(font "Intel Clear" )(invisible))
+	(text "<<__$DEF_ALIAS25917>>" (rect 998 -168 1121 -151)(font "Intel Clear" )(invisible))
 	(pt 1032 -152)
-	(pt 944 -152)
+	(pt 976 -152)
 	(bus)
 )
 (connector
-	(text "<<__$DEF_ALIAS25919>>" (rect 1565 -152 1688 -135)(font "Intel Clear" )(invisible))
+	(text "<<__$DEF_ALIAS25919>>" (rect 1597 -152 1720 -135)(font "Intel Clear" )(invisible))
 	(pt 2472 -136)
-	(pt 944 -136)
+	(pt 976 -136)
 	(bus)
 )
 (connector
-	(text "<<__$DEF_ALIAS25921>>" (rect 1083 -120 1206 -103)(font "Intel Clear" )(invisible))
+	(text "<<__$DEF_ALIAS25921>>" (rect 1115 -120 1238 -103)(font "Intel Clear" )(invisible))
 	(pt 1624 -104)
-	(pt 944 -104)
+	(pt 976 -104)
 	(bus)
 )
 (connector
-	(text "<<__$DEF_ALIAS25923>>" (rect 1052 -104 1175 -87)(font "Intel Clear" )(invisible))
+	(text "<<__$DEF_ALIAS25923>>" (rect 1084 -104 1207 -87)(font "Intel Clear" )(invisible))
 	(pt 1592 -88)
-	(pt 944 -88)
+	(pt 976 -88)
 	(bus)
 )
 (connector
@@ -2193,19 +2199,14 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1000 -64)
-	(pt 992 -64)
-	(bus)
-)
-(connector
 	(pt 992 -72)
-	(pt 944 -72)
+	(pt 976 -72)
 	(bus)
 )
 (connector
-	(text "ULACTRL[3..0]" (rect 1863 184 1932 201)(font "Intel Clear" ))
-	(pt 1848 200)
-	(pt 1920 200)
+	(text "ULACTRL[2..0]" (rect 1766 -136 1835 -119)(font "Intel Clear" ))
+	(pt 1848 -120)
+	(pt 976 -120)
 	(bus)
 )
 (connector
@@ -2238,10 +2239,8 @@ refer to the applicable agreement for further details.
 	(pt -648 160)
 )
 (connector
-	(text "ULACTRL[2..0]" (rect 1734 -136 1803 -119)(font "Intel Clear" ))
-	(pt 944 -120)
-	(pt 1848 -120)
-	(bus)
+	(pt -648 -280)
+	(pt 736 -280)
 )
 (junction (pt 768 200))
 (junction (pt 768 184))

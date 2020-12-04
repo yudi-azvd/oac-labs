@@ -20,6 +20,7 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
+
 </modelsim_script>
 <modelsim_script_timing>onerror {exit -code 1}
 vlib work
@@ -38,6 +39,7 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
+
 </modelsim_script_timing>
 <hdl_lang>verilog</hdl_lang>
 </simulation_settings>*/
@@ -772,9 +774,9 @@ TRANSITION_LIST("iCLK")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 20;
-			LEVEL 0 FOR 25.0;
-			LEVEL 1 FOR 25.0;
+			REPEAT = 50;
+			LEVEL 0 FOR 10.0;
+			LEVEL 1 FOR 10.0;
 		}
 	}
 }
@@ -865,7 +867,7 @@ TRANSITION_LIST("iInst[22]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -874,7 +876,7 @@ TRANSITION_LIST("iInst[21]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -901,7 +903,7 @@ TRANSITION_LIST("iInst[18]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -910,7 +912,7 @@ TRANSITION_LIST("iInst[17]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -919,7 +921,7 @@ TRANSITION_LIST("iInst[16]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -928,7 +930,7 @@ TRANSITION_LIST("iInst[15]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -946,7 +948,7 @@ TRANSITION_LIST("iInst[13]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -982,7 +984,7 @@ TRANSITION_LIST("iInst[9]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -1000,7 +1002,7 @@ TRANSITION_LIST("iInst[7]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -1009,7 +1011,7 @@ TRANSITION_LIST("iInst[6]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -1018,7 +1020,7 @@ TRANSITION_LIST("iInst[5]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -1671,7 +1673,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "oEscreveIR";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Hexadecimal;
+	RADIX = Binary;
 	TREE_INDEX = 34;
 	TREE_LEVEL = 0;
 }
@@ -1680,7 +1682,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "oEscreveMem";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Hexadecimal;
+	RADIX = Binary;
 	TREE_INDEX = 35;
 	TREE_LEVEL = 0;
 }
@@ -1689,7 +1691,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "oEscrevePC";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Hexadecimal;
+	RADIX = Binary;
 	TREE_INDEX = 36;
 	TREE_LEVEL = 0;
 }
@@ -1698,7 +1700,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "oEscrevePCBack";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Hexadecimal;
+	RADIX = Binary;
 	TREE_INDEX = 37;
 	TREE_LEVEL = 0;
 }
@@ -1707,7 +1709,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "oEscrevePCCondicional";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Hexadecimal;
+	RADIX = Binary;
 	TREE_INDEX = 38;
 	TREE_LEVEL = 0;
 }
@@ -1716,7 +1718,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "oEscreveReg";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Hexadecimal;
+	RADIX = Binary;
 	TREE_INDEX = 39;
 	TREE_LEVEL = 0;
 }
@@ -1725,7 +1727,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "oIouD";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Hexadecimal;
+	RADIX = Binary;
 	TREE_INDEX = 40;
 	TREE_LEVEL = 0;
 }
@@ -1734,7 +1736,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "oLeMem";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Hexadecimal;
+	RADIX = Binary;
 	TREE_INDEX = 41;
 	TREE_LEVEL = 0;
 }
@@ -1743,7 +1745,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "oMemPraReg";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Hexadecimal;
+	RADIX = Binary;
 	TREE_INDEX = 42;
 	TREE_LEVEL = 0;
 	CHILDREN = 43, 44, 45;
@@ -1753,7 +1755,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "oMemPraReg[2]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Hexadecimal;
+	RADIX = Binary;
 	TREE_INDEX = 43;
 	TREE_LEVEL = 1;
 	PARENT = 42;
@@ -1763,7 +1765,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "oMemPraReg[1]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Hexadecimal;
+	RADIX = Binary;
 	TREE_INDEX = 44;
 	TREE_LEVEL = 1;
 	PARENT = 42;
@@ -1773,7 +1775,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "oMemPraReg[0]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Hexadecimal;
+	RADIX = Binary;
 	TREE_INDEX = 45;
 	TREE_LEVEL = 1;
 	PARENT = 42;
@@ -1783,7 +1785,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "oOrigAULA";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Hexadecimal;
+	RADIX = Binary;
 	TREE_INDEX = 46;
 	TREE_LEVEL = 0;
 	CHILDREN = 47, 48, 49;
@@ -1793,7 +1795,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "oOrigAULA[2]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Hexadecimal;
+	RADIX = Binary;
 	TREE_INDEX = 47;
 	TREE_LEVEL = 1;
 	PARENT = 46;
@@ -1803,7 +1805,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "oOrigAULA[1]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Hexadecimal;
+	RADIX = Binary;
 	TREE_INDEX = 48;
 	TREE_LEVEL = 1;
 	PARENT = 46;
@@ -1813,7 +1815,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "oOrigAULA[0]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Hexadecimal;
+	RADIX = Binary;
 	TREE_INDEX = 49;
 	TREE_LEVEL = 1;
 	PARENT = 46;
@@ -1823,7 +1825,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "oOrigBULA";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Hexadecimal;
+	RADIX = Binary;
 	TREE_INDEX = 50;
 	TREE_LEVEL = 0;
 	CHILDREN = 51, 52, 53;
@@ -1833,7 +1835,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "oOrigBULA[2]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Hexadecimal;
+	RADIX = Binary;
 	TREE_INDEX = 51;
 	TREE_LEVEL = 1;
 	PARENT = 50;
@@ -1843,7 +1845,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "oOrigBULA[1]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Hexadecimal;
+	RADIX = Binary;
 	TREE_INDEX = 52;
 	TREE_LEVEL = 1;
 	PARENT = 50;
@@ -1853,7 +1855,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "oOrigBULA[0]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Hexadecimal;
+	RADIX = Binary;
 	TREE_INDEX = 53;
 	TREE_LEVEL = 1;
 	PARENT = 50;
@@ -1863,7 +1865,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "oOrigPC";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Hexadecimal;
+	RADIX = Binary;
 	TREE_INDEX = 54;
 	TREE_LEVEL = 0;
 	CHILDREN = 55, 56, 57;
@@ -1873,7 +1875,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "oOrigPC[2]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Hexadecimal;
+	RADIX = Binary;
 	TREE_INDEX = 55;
 	TREE_LEVEL = 1;
 	PARENT = 54;
@@ -1883,7 +1885,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "oOrigPC[1]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Hexadecimal;
+	RADIX = Binary;
 	TREE_INDEX = 56;
 	TREE_LEVEL = 1;
 	PARENT = 54;
@@ -1893,7 +1895,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "oOrigPC[0]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Hexadecimal;
+	RADIX = Binary;
 	TREE_INDEX = 57;
 	TREE_LEVEL = 1;
 	PARENT = 54;
@@ -1903,7 +1905,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "oState";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Hexadecimal;
+	RADIX = Binary;
 	TREE_INDEX = 58;
 	TREE_LEVEL = 0;
 	CHILDREN = 59, 60, 61, 62, 63, 64;
@@ -1913,7 +1915,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "oState[5]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Hexadecimal;
+	RADIX = Binary;
 	TREE_INDEX = 59;
 	TREE_LEVEL = 1;
 	PARENT = 58;
@@ -1923,7 +1925,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "oState[4]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Hexadecimal;
+	RADIX = Binary;
 	TREE_INDEX = 60;
 	TREE_LEVEL = 1;
 	PARENT = 58;
@@ -1933,7 +1935,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "oState[3]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Hexadecimal;
+	RADIX = Binary;
 	TREE_INDEX = 61;
 	TREE_LEVEL = 1;
 	PARENT = 58;
@@ -1943,7 +1945,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "oState[2]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Hexadecimal;
+	RADIX = Binary;
 	TREE_INDEX = 62;
 	TREE_LEVEL = 1;
 	PARENT = 58;
@@ -1953,7 +1955,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "oState[1]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Hexadecimal;
+	RADIX = Binary;
 	TREE_INDEX = 63;
 	TREE_LEVEL = 1;
 	PARENT = 58;
@@ -1963,7 +1965,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "oState[0]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Hexadecimal;
+	RADIX = Binary;
 	TREE_INDEX = 64;
 	TREE_LEVEL = 1;
 	PARENT = 58;
@@ -1973,7 +1975,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "oULAControl";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Hexadecimal;
+	RADIX = Binary;
 	TREE_INDEX = 65;
 	TREE_LEVEL = 0;
 	CHILDREN = 66, 67, 68;
@@ -1983,7 +1985,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "oULAControl[2]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Hexadecimal;
+	RADIX = Binary;
 	TREE_INDEX = 66;
 	TREE_LEVEL = 1;
 	PARENT = 65;
@@ -1993,7 +1995,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "oULAControl[1]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Hexadecimal;
+	RADIX = Binary;
 	TREE_INDEX = 67;
 	TREE_LEVEL = 1;
 	PARENT = 65;
@@ -2003,7 +2005,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "oULAControl[0]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Hexadecimal;
+	RADIX = Binary;
 	TREE_INDEX = 68;
 	TREE_LEVEL = 1;
 	PARENT = 65;
