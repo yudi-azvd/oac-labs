@@ -1,10 +1,20 @@
+
 `define MULTICICLO
 //`define PIPELINE
+
+`ifndef PARAM
+`define PARAM
+
 parameter
+
+// 	Usar nos arquivos q tiver q usar parametros
+//	`ifndef PARAM
+//		`include "../parameter.v"
+//	`endif
 
 	ON = 32'b1,
 	OFF = 32'b0,
-	ZERO = 32'h0;
+	ZERO = 32'h0,
 
 // campo Opcode
 
@@ -48,24 +58,7 @@ parameter
 	ST_ULAREGWRITE	= 6'd10,
 	ST_BRANCH		= 6'd11,
 	ST_JAL			= 6'd12,
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 
 FOCAFOFA = 32'hF0CAF0FA;
+
+`endif

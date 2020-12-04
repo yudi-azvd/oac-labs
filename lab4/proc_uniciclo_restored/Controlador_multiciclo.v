@@ -1,8 +1,12 @@
+`ifndef PARAM
+	`include "../parameter.v"
+`endif
+
 module Controlador_multiciclo(
-	input iCLK, iReset,
+	input iCLK,
 	input [31:0] iInst,
 	output oEscrevePCCondicional,
-	output oEscvrevePC,
+	output oEscrevePC,
 	output oIouD,
 	output oEscreveMem,
 	output oLeMem, 
@@ -34,17 +38,9 @@ initial
 		contador <= 5'd0;
 	end
 
-always @(posedge iCLK or posedge iRST)
+always @(posedge iCLK)
 	begin
-		if(iRST)
-			begin
-				pr_state <= 6'b0;
-				contador <= 6'b0;
-			end
-		else 
-			begin
-				pr_state <= nx_state;
-			end
+		pr_state <= nx_state;
 	end
 
 always @(*)
@@ -253,7 +249,7 @@ always @(*)
 					case(Funct3)
 						FUNCT3_ADD,
 						FUNCT3_SUB:
-							if(Funct7 == Funct7_SUB)	oULAControl <= 3'b110;
+							if(Funct7 == FUNCT7_SUB)	oULAControl <= 3'b110;
 							else								oULAControl <= 3'b010;
 						FUNCT3_SLT:							oULAControl <= 3'b111;
 						FUNCT3_OR:							oULAControl <= 3'b001;
@@ -319,22 +315,6 @@ always @(*)
 			nx_state						<= ST_FETCH;
 		end
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		default:
 		begin
 			oEscreveIR 					<= 1'b0;
@@ -353,6 +333,8 @@ always @(*)
 			
 			nx_state 					<= 6'b0;
 		end
-	endmodule 
+		
+	endcase
+
 	
 endmodule 

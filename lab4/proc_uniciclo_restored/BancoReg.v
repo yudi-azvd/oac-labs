@@ -16,8 +16,8 @@ begin
 	for(i = 0; i <= 31; i = i + 1)
 		BR[i] = 32'd0;
 	BR[SPR] = 32'd1020;
-	BR[10] = 32'd0;
-	BR[11] = 32'd16;
+	BR[10] = 32'd80;
+	BR[11] = 32'd96;
 end
 	
 assign oDado1 = BR[iRs1];
